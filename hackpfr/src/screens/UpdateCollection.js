@@ -5,7 +5,7 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle, faPen } from '@fortawesome/free-solid-svg-icons'
-import collections from '../data/collections.json';
+import collections from '../assets/geodata/collections.json';
 import { ToastContainer, toast } from 'react-toastify';
 
 class UpdateCollection extends React.Component {
