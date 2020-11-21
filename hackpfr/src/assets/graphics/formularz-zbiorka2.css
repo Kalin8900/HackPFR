@@ -1,0 +1,109 @@
+@charset "utf-8";
+	button
+{
+	background : #A4D381;
+	background : rgba(164, 211, 129, 1);
+	position : absolute ;
+	left : 810px;
+	top : 592px;
+	width : 300px;
+	height : 79px;
+	border-radius : 12px;
+	-moz-border-radius : 12px;
+	-webkit-border-radius : 12px;
+}
+.field
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 710px;
+	top : 461px;
+	width : 500px;
+	height : 75px;
+	border-radius : 12px;
+	-moz-border-radius : 12px;
+	-webkit-border-radius : 12px;
+}
+.banner-menu
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 0px;
+	top : 0px;
+	width : 1920px;
+	height : 150px;
+}
+.highlight
+{
+	background : #A4D381;
+	background : rgba(164, 211, 129, 1);
+	position : absolute ;
+	left : 640px;
+	top : 0px;
+	width : 213px;
+	height : 150px;
+}
+.background
+{
+	background : #EBF0E7;
+	background : rgba(235, 240, 231, 1);
+	position : absolute ;
+	left : 0px;
+	top : 150px;
+	width : 1920px;
+	height : 930px;
+}
+.NormalCharacterStyle
+{
+	font-family : Manrope;
+	font-size : 40px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle1
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #666666;
+	color : rgb(102, 102, 102);
+}
+.NormalCharacterStyle2
+{
+	font-family : Manrope;
+	font-size : 50px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle4
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle5
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle3
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.logo
+{
+	background-image : url(logo.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 116px;
+	top : 49px;
+	width : 194px;
+	height : 51px;
+}

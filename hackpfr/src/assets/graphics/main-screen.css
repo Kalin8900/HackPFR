@@ -1,0 +1,194 @@
+@charset "utf-8";
+	.button4
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 747px;
+	top : 640px;
+	width : 425px;
+	height : 225px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.banner-menu
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 0px;
+	top : 0px;
+	width : 1920px;
+	height : 150px;
+}
+.shadow3
+{
+	background : #CDE1BD;
+	background : rgba(205, 225, 189, 1);
+	position : absolute ;
+	left : 762px;
+	top : 380px;
+	width : 425px;
+	height : 225px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.highlight
+{
+	background : #A4D381;
+	background : rgba(164, 211, 129, 1);
+	position : absolute ;
+	left : 640px;
+	top : 0px;
+	width : 213px;
+	height : 150px;
+}
+.shadow2
+{
+	background : #CDE1BD;
+	background : rgba(205, 225, 189, 1);
+	position : absolute ;
+	left : 1296px;
+	top : 380px;
+	width : 425px;
+	height : 500px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.shahow4
+{
+	background : #CDE1BD;
+	background : rgba(205, 225, 189, 1);
+	position : absolute ;
+	left : 762px;
+	top : 655px;
+	width : 425px;
+	height : 225px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.shadow1
+{
+	background : #CDE1BD;
+	background : rgba(205, 225, 189, 1);
+	position : absolute ;
+	left : 228px;
+	top : 380px;
+	width : 425px;
+	height : 500px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.background
+{
+	background : #EBF0E7;
+	background : rgba(235, 240, 231, 1);
+	position : absolute ;
+	left : 0px;
+	top : 150px;
+	width : 1920px;
+	height : 930px;
+}
+.button2
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 1281px;
+	top : 365px;
+	width : 425px;
+	height : 500px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.button1
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 213px;
+	top : 365px;
+	width : 425px;
+	height : 500px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.button-highlight3
+{
+	background : #A4D381;
+	background : rgba(164, 211, 129, 1);
+	position : absolute ;
+	left : 747px;
+	top : 365px;
+	width : 425px;
+	height : 225px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.NormalCharacterStyle
+{
+	font-family : Manrope;
+	font-size : 60px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.NormalCharacterStyle1
+{
+	font-family : Manrope;
+	font-size : 60px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle2
+{
+	font-family : Manrope;
+	font-size : 60px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle4
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle5
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle3
+{
+	font-family : Manrope;
+	font-size : 60px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle6
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.logo
+{
+	background-image : url(logo.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 116px;
+	top : 49px;
+	width : 194px;
+	height : 51px;
+}

@@ -1,0 +1,202 @@
+@charset "utf-8";
+	button
+{
+	background : #A4D381;
+	background : rgba(164, 211, 129, 1);
+	position : absolute ;
+	left : 852px;
+	top : 900px;
+	width : 214px;
+	height : 79px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.field3
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 584px;
+	top : 626px;
+	width : 750px;
+	height : 75px;
+	border-radius : 15px;
+	-moz-border-radius : 15px;
+	-webkit-border-radius : 15px;
+}
+.arrow-right
+{
+	background-image : url(arrow-right.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 1009px;
+	top : 928px;
+	width : 14px;
+	height : 24px;
+}
+.field2
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 584px;
+	top : 493px;
+	width : 750px;
+	height : 75px;
+	border-radius : 15px;
+	-moz-border-radius : 15px;
+	-webkit-border-radius : 15px;
+}
+.field4_1_
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 584px;
+	top : 360px;
+	width : 750px;
+	height : 75px;
+	border-radius : 15px;
+	-moz-border-radius : 15px;
+	-webkit-border-radius : 15px;
+}
+.field4
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 584px;
+	top : 760px;
+	width : 750px;
+	height : 75px;
+	border-radius : 15px;
+	-moz-border-radius : 15px;
+	-webkit-border-radius : 15px;
+}
+.banner-menu
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 0px;
+	top : 0px;
+	width : 1920px;
+	height : 150px;
+}
+.highlight
+{
+	background : #A4D381;
+	background : rgba(164, 211, 129, 1);
+	position : absolute ;
+	left : 640px;
+	top : 0px;
+	width : 213px;
+	height : 150px;
+}
+.arrow_down
+{
+	background-image : url(arrow_down.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 1272px;
+	top : 657px;
+	width : 24px;
+	height : 14px;
+}
+.background
+{
+	background : #EBF0E7;
+	background : rgba(235, 240, 231, 1);
+	position : absolute ;
+	left : 0px;
+	top : 150px;
+	width : 1920px;
+	height : 930px;
+}
+.dropdown-button
+{
+	background : #EBF0E7;
+	background : rgba(235, 240, 231, 1);
+	position : absolute ;
+	left : 1259px;
+	top : 639px;
+	width : 50px;
+	height : 50px;
+	border-radius : 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius : 10px;
+}
+.NormalCharacterStyle
+{
+	font-family : Manrope;
+	font-size : 40px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle1
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #666666;
+	color : rgb(102, 102, 102);
+}
+.NormalCharacterStyle2
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #666666;
+	color : rgb(102, 102, 102);
+}
+.NormalCharacterStyle4
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #666666;
+	color : rgb(102, 102, 102);
+}
+.NormalCharacterStyle5
+{
+	font-family : Manrope;
+	font-size : 50px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle3
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #666666;
+	color : rgb(102, 102, 102);
+}
+.NormalCharacterStyle6
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle7
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle8
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.logo
+{
+	background-image : url(logo.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 116px;
+	top : 49px;
+	width : 194px;
+	height : 51px;
+}
