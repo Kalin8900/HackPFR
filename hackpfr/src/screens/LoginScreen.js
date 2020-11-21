@@ -16,6 +16,7 @@ const LoginForm = props => {
         if(loginInput.current.value === 'urzad' && passInput.current.value === 'urzad123')
         {
             setLogged(true);
+            document.cookie = '';
             document.cookie = 'user=urząd cnt=1 ';
         }
         else if(loginInput.current.value === 'san' && passInput.current.value === 'san123')
@@ -25,6 +26,8 @@ const LoginForm = props => {
         }
         else
             toast.error('Nie udało się zalogować na podany login i hasło');
+
+        console.log(document.cookie)
     }
 
     return (

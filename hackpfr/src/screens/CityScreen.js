@@ -4,6 +4,10 @@ import {Container, Row, Col, Button} from 'react-bootstrap';
 import {Redirect} from 'react-router-dom'
 import BigButton from "../components/BigButton";
 import {toast, ToastContainer} from "react-toastify";
+import {coloredBtnStyle} from "../assets/graphics/styles";
+import mainTheme from "../assets/graphics/theme";
+
+const mt = mainTheme
 
 
 const CityScreen = props => {
@@ -12,7 +16,10 @@ const CityScreen = props => {
 
     //MAKIETA
     useEffect(() => {
+        console.log(cookie)
+
         if (cookie.length > 1) {
+
             if (logged === 'urząd' || logged === 'sanepid')
                 document.cookie = document.cookie.substr(0, document.cookie.length - 1) + (parseInt(cookie[1].substr(4)) + 1) + ' ';
 
@@ -26,28 +33,30 @@ const CityScreen = props => {
         return <Redirect to='/'/>
 
     return (
-        <Container>
+        <Container className='page' style={{background: mt.colors.pageBackground}}>
             <ToastContainer/>
-            <Row>
-                <Col>
-                    {
-                        (logged === 'urząd') ?
-                            <BigButton className='homeBtn' path='/declarations'>
-                                Mapa deklaracji
-                            </BigButton> :
-                            <BigButton className='homeBtn' disabled path='/declarations'>
-                                Mapa deklaracji
-                            </BigButton>
+            <Container>
+                <Row>
+                    <Col>
+                        {
+                            (logged === 'urząd') ?
+                                <BigButton style={coloredBtnStyle} className='homeBtn' path='/declarations'>
+                                    Mapa deklaracji
+                                </BigButton> :
+                                <BigButton style={coloredBtnStyle} className='homeBtn' disabled path='/declarations'>
+                                    Mapa deklaracji
+                                </BigButton>
 
-                    }
+                        }
 
-                </Col>
-                <Col>
-                    <BigButton className='homeBtn' path='/covid'>
-                        Mapa COVID
-                    </BigButton>
-                </Col>
-            </Row>
+                    </Col>
+                    <Col>
+                        <BigButton style={coloredBtnStyle} className='homeBtn' path='/covid'>
+                            Mapa COVID
+                        </BigButton>
+                    </Col>
+                </Row>
+            </Container>
         </Container>
     )
 }

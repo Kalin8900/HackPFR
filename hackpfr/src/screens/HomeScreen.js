@@ -3,24 +3,11 @@ import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import BigButton from "../components/BigButton";
 import mainTheme from "../assets/graphics/theme";
+import {btnStyle, coloredBtnStyle} from "../assets/graphics/styles";
+
 const mt = mainTheme;
 
-const btnStyle = {
-    background: mt.colors.white,
-    borderRadius: '2%',
-    border: 0,
-    color: mt.colors.black,
-    fontWeight: 600,
-    fontSize: mt.font.size.buttonSize,
-    boxShadow: '10px 10px ' + mt.colors.buttonShadow
-}
 
-const coloredBtnStyle = {
-    ...btnStyle,
-    marginBottom: '1vw'
-};
-coloredBtnStyle.background = mt.colors.accent;
-coloredBtnStyle.color = mt.colors.white;
 
 function HomeScreen() {
     return (
