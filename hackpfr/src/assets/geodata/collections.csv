@@ -1,0 +1,47 @@
+﻿id,name,old_address,plastic,metal,paper,cups,chargers,prg_address,lng,lat
+1,Przedszkole Miejskie Nr 2,ul. Starościńska 4b,5,3,,,1,none, 0, 0
+2,Przedszkole Miejskie Nr 5,ul. Kwiatowa 1,8,20,,,3,Kwiatowa 1, 51.134102, 23.461534
+3,Przedszkole Miejskie Nr 6,ul. Pocztowa 18,8,,,2,2,none, 0, 0
+4,Przedszkole Miejskie Nr 8,ul. Reja 54,9,,45,4,1,Reja M. 54, 51.133662, 23.510894
+5,Przedszkole Miejskie Nr 10,ul. Zachodnia 49,5,,32,2,3,Zachodnia 49, 51.141721, 23.432193
+6,Przedszkole Miejskie Nr 11,ul. Piłsudskiego 25 a,7,,,1,4,al. Marszałka Józefa Piłsudskiego 25A, 51.138333, 23.493078
+7,Przedszkole Miejskie Nr 12,ul. Powstańców Warszawy 6,8,6,,2,,Powstańców Warszawy 6, 51.126508, 23.475893
+8,Przedszkole Miejskie Nr 13 z Oddziałami Integracyjnymi,ul. Połaniecka 5,9,18,,,,Połaniecka 5, 51.122313, 23.476512
+9,Przedszkole Miejskie Nr 14,ul. G. Roweckiego 4a,5,4,,1,,none, 0, 0
+10,Przedszkole Miejskie Nr 15,ul. Wieniawskiego 3,5,4,,3,1,Wieniawskiego H. 3, 51.124974, 23.46576
+11,Szkoła Podstawowa Nr 1,ul. Wołyńska 1,6,,5,2,4,Wołyńska 1, 51.136012, 23.49132
+12,Szkoła Podstawowa Nr 2,ul. Obłońska 51,8,5,,4,5,Obłońska 51, 51.137887, 23.475607
+13,Szkoła Podstawowa Nr 4 z Oddziałami Integracyjnymi,ul. Wyszyńskiego 15,9,32,7,,6,Wyszyńskiego St. Prymasa 15, 51.128507, 23.497057
+14,Szkoła Podstawowa Nr 5,ul. I Pułku Szwoleżerów 1,5,15,,,2,1 Pułku Szwoleżerów 1, 51.13472, 23.481044
+15,Szkoła Podstawowa Nr 7,ul. Synów Pułku 15,8,,,2,1,Synów Pułku 15, 51.142, 23.439806
+16,Szkoła Podstawowa Nr 8,ul. Połaniecka 10,8,34,,4,3,Połaniecka 10, 51.122953, 23.477076
+17,Szkoła Podstawowa Nr 11,ul. Powstańców Warszawy 10,9,,,,,Powstańców Warszawy 10, 51.126145, 23.479226
+18,Zespół Szkolno Przedszkolny Nr 3 z Oddziałami Integracyjnymi,ul. Rejowiecka 76,5,,,3,,none, 0, 0
+19,I Liceum Ogólnokształcące,ul. Czarnieckiego 8,7,24,18,2,1,Czarnieckiego S. 8, 51.134714, 23.477715
+20,II Liceum Ogólnokształcące,ul. Szpitalna 14,8,8,16,4,2,Szpitalna 14, 51.142553, 23.455891
+21,Zespół Szkół Ekonomicznych i  Mundurowych,ul. Sienkiewicza 22,9,20,,2,,Sienkiewicza H. 22, 51.136701, 23.477664
+22,IV Liceum Ogólnokształcące z Oddziałami Integracyjnymi,ul. Św. Mikołaja 4,5,,,1,2,none, 0, 0
+23,Zespół Szkół Budowlanych i Geodezyjnych,ul. Batorego 1,4,16,,2,3,Stefana Batorego 1, 51.131747, 23.497412
+24,Zespół Szkół Technicznych,ul. Graniczna 2,6,13,5,,,Graniczna 2, 51.127999, 23.491891
+25,Zespół Szkół Gastronomicznych i Hotelarskich,ul. Reformacka 13,8,6,,1,1,Reformacka 13, 51.132452, 23.470397
+26,Zespół Szkół Energetycznych i Transportowych,ul. Jagiellońska 29,9,,,3,3,Jagiellońska 29, 51.131466, 23.508026
+27,Centrum Kształcenia Praktycznego,ul. Jagiellońska 29,5,63,,2,3,Jagiellońska 29, 51.131466, 23.508026
+28,Centrum Kształcenia Ustawicznego,ul. Batorego 1,8,,7,4,2,Stefana Batorego 1, 51.131747, 23.497412
+29,Zespół Wychowania i  Pomocy Psychologiczno – Pedagogicznej Nr 1,ul. Trubakowska 59,8,22,,2,1,Trubakowska 59, 51.135349, 23.445659
+30,Zespół Wychowania i  Pomocy Psychologiczno – Pedagogicznej Nr 2,ul. Powstańców Warszawy 8,9,10,,,,Powstańców Warszawy 8, 51.126299, 23.477453
+31,Młodzieżowy Dom Kultury,ul. Pocztowa 41,5,,,2,2,Pocztowa 41, 51.131138, 23.478098
+32,Niepubliczna Szkoła Podstawowa Razem,ul. Reja 54,7,4,,,1,Reja M. 54, 51.133662, 23.510894
+33,MOPR,ul. Kolejowa 7,8,7,,1,3,none, 0, 0
+34,Polski Czerwony Krzyż. Zarząd Rejonowy,ul. Rejowiecka 132,9,,,3,4,Rejowiecka 132, 51.144051, 23.459089
+35,Chełmski Ośrodek Wsparcia Bliźniego Caritas Ordynariatu Polowego Wojska Polskiego,ul. Lubelska 137,5,5,10,2,5,Lubelska 137, 51.140879, 23.451709
+36,Związek Harcerstwa Polskiego,ul. 1 Pułku Szwoleżerów 15A,5,7,,,3,none, 0, 0
+37,Kościół Rzymskokatolicki p.w. Narodzenia Najświętszej Marii Panny,ul. Lubelska 2,6,,15,2,2,Lubelska 2, 51.131678, 23.478278
+38,Kościół Rzymskokatolicki p.w. Rozesłania Świętych Apostołów,ul. Lubelska 55,8,22,,,1,Lubelska 55, 51.132889, 23.471649
+39,Kościół Rzymskokatolicki - Klasztor Franciszkanów,ul. Reformacka 13a,9,10,17,2,4,Reformacka 13A, 51.132206, 23.470346
+40,Kościół Rzymskokatolicki p.w. Św. Kazimierza,ul. Koszarowa 16,5,,150,4,5,Koszarowa 16, 51.142537, 23.444987
+41,Kościół Rzymskokatolicki p.w. Miłosierdzia Bożego, ul. Artura Grottgera 1a,8,4,3763,1,,none, 0, 0
+42,Kościół Rzymskokatolicki p.w. Chrystusa Odkupiciela,ul. Księdza Marcelego Mrozka 2,8,7,,3,2,none, 0, 0
+43,Kościół Rzymskokatolicki p.w. Świętego Ducha,ul. Grunwaldzka 32,9,,,,1,Grunwaldzka 32, 51.12919, 23.505507
+44,Kościół Rzymskokatolicki p.w. Przenajświętszej Trójcy,Plac Jana Pawła II 2,5,,130,4,3,im. Jana Pawła II 2, 51.143734, 23.42981
+45,Kościół Rzymskokatolicki p.w. Świętej Rodziny,ul. Karola Szymanowskiego 19,7,,,2,1,Szymanowskiego K.,51.127561,23.46041
+46,Kościół Rzymskokatolicki p.w. Matki Teresy z Kalkuty,ul. Jana Kochanowskiego 36,8,,50,1,,Kochanowskiego J. 36,51.150399, 23.443604
