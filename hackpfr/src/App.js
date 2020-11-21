@@ -23,7 +23,7 @@ const mt = mainTheme;
 function App() {
 
     useEffect(() => {
-        const testRef = database.ref('test');
+        const testRef = database.ref('declarations');
 
         testRef.on('value', (snap) => {
             const data = snap.val();
