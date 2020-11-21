@@ -117,7 +117,7 @@ const CollectionsMapScreen = () => {
     }, [filter]);
 
     return (
-        <div id="mapid">
+        <div id="mapid" style={{height: '88vh'}}>
             <CollectionSummary />
             <MapFiltering filter={filter} setFilter={setFilter} screen="CollectionsMapScreen" />
         </div>
