@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'leaflet/dist/leaflet.css';
 import MainScreen from './screens/MainScreen';
+import CollectionsMapScreen from './screens/CollectionsMapScreen';
 import Header from './components/Header';
 import './App.css';
 import './index.css';
