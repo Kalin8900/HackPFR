@@ -13,13 +13,13 @@ function Header() {
         <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Brand href="/" style={{ color: "white" }}>
-                (nazwa robocza)
+                (LOGO tutaj)
             </Navbar.Brand>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <NavElement path="/">Strona główna</NavElement>
-                    <NavElement path="/bins">Ekran 2</NavElement>
-                    <NavElement path="/cases">Ekran 3</NavElement>
+                    <NavElement path="/throw">Oddaj</NavElement>
+                    <NavElement path="/reportCollection">Zgłoś zbiórkę</NavElement>
+                    <NavElement path="/stats">Statystyki</NavElement>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
