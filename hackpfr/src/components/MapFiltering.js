@@ -1,7 +1,11 @@
 import React from "react";
 import { ListGroup } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faBatteryQuarter, faTools, faBolt, faPills, faRecycle } from '@fortawesome/free-solid-svg-icons'
+import filtrBaterie from '../assets/graphics/filtr_baterie.svg';
+import filtrElektronika from '../assets/graphics/filtr_elektronika.svg';
+import filtrLeki from '../assets/graphics/filtr_leki.svg';
+import filtrMakulatura from '../assets/graphics/filtr_makulatura.svg';
+import filtrMetale from '../assets/graphics/filtr_metale.svg';
+import filtrNakretki from '../assets/graphics/filtr_nakretki.svg';
 
 function removeElement(array, element) {
     let result = [];
@@ -14,9 +18,9 @@ function removeElement(array, element) {
 
 const FilteredElement = (props) => {
     if (props.filter.includes(props.name))
-        return (<ListGroup.Item className="active" action variant="light" onClick={() => props.setFilter(removeElement(props.filter, props.name))}><FontAwesomeIcon icon={props.icon} /> {props.name}</ListGroup.Item>);
+        return (<ListGroup.Item className="active" action variant="light" onClick={() => props.setFilter(removeElement(props.filter, props.name))}><img src={props.icon} style={{width: '1vw'}} /> {props.name}</ListGroup.Item>);
     else
-        return (<ListGroup.Item action variant="light" onClick={() => props.setFilter([...props.filter, props.name])}><FontAwesomeIcon icon={props.icon} /> {props.name}</ListGroup.Item>);
+        return (<ListGroup.Item action variant="light" onClick={() => props.setFilter([...props.filter, props.name])}><img src={props.icon} style={{width: '1vw'}} /> {props.name}</ListGroup.Item>);
 }
 
 const MapFiltering = (props) => {
@@ -25,15 +29,15 @@ const MapFiltering = (props) => {
             <div style={mapFilteringStyle}>
                 <h6 style={{ margin: '2vh' }}>FILTROWANIE</h6>
                 <ListGroup>
-                    <FilteredElement name="Leki" icon={faPills} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Baterie" icon={faBatteryQuarter} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Makulatura" icon={faCopy} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Metal" icon={faTools} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Elektronika" icon={faBolt} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Butelki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Nakrętki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="PSZOK" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="MGO" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Leki" icon={filtrLeki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Baterie" icon={filtrBaterie} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Makulatura" icon={filtrMakulatura} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Metal" icon={filtrMetale} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Elektronika" icon={filtrElektronika} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Butelki" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Nakrętki" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="PSZOK" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="MGO" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
                 </ListGroup>
             </div>
         );
@@ -42,9 +46,9 @@ const MapFiltering = (props) => {
             <div style={mapFilteringStyle}>
                 <h6 style={{ margin: '2vh' }}>FILTROWANIE</h6>
                 <ListGroup>
-                    <FilteredElement name="Izolatoria domowe" icon={faPills} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Ilozatioria stacjonarne" icon={faBatteryQuarter} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="Szpitale" icon={faCopy} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Izolatoria domowe" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Ilozatioria stacjonarne" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Szpitale" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
                 </ListGroup>
             </div>
         );

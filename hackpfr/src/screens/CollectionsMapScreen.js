@@ -1,11 +1,23 @@
 import React, { useState, useEffect } from "react";
 import L from "leaflet";
 import collections from "../assets/geodata/collections.json"
-import markerIcon from "../assets/graphics/marker.png"
 import CollectionSummary from "../components/CollectionSummary"
 import MapFiltering from "../components/MapFiltering"
+import pinBaterie from "../assets/graphics/pin-baterie.svg";
+import pinElektronika from "../assets/graphics/pin-elektronika.svg";
+import pinLeki from "../assets/graphics/pin-leki.svg";
+import pinMakulatura from "../assets/graphics/pin-makulatura.svg";
+import pinNakretki from "../assets/graphics/pin-nakretki.svg";
+import pinMetale from "../assets/graphics/pin-metale.svg";
 
-function generateLayer(fraction) {
+function generateLayer(fraction, icon) {
+    let markerImage = L.icon({
+        iconUrl: icon,
+        iconSize: [35, 35],
+        iconAnchor: [20, 20],
+        popupAnchor: [-3, -17]
+    });
+
     return L.geoJson(collections, {
         filter: function (feature, layer) {
             return feature.properties.fraction === fraction;
@@ -20,23 +32,16 @@ function generateLayer(fraction) {
     });
 }
 
-let markerImage = L.icon({
-    iconUrl: markerIcon,
-    iconSize: [25, 25],
-    iconAnchor: [20, 20],
-    popupAnchor: [-30, -76]
-});
-
 let mymap;
-let makulatura = generateLayer("Makulatura");
-let baterie = generateLayer("Baterie");
-let metal = generateLayer("Metal");
-let elektronika = generateLayer("Elektronika");
-let leki = generateLayer("Leki");
-let nakretki = generateLayer("Nakrętki");
-let butelki = generateLayer("Butelki");
-let pszok = generateLayer("PSZOK");
-let mgo = generateLayer("MGO");
+let makulatura = generateLayer("Makulatura", pinMakulatura);
+let baterie = generateLayer("Baterie", pinBaterie);
+let metal = generateLayer("Metal", pinMetale);
+let elektronika = generateLayer("Elektronika", pinElektronika);
+let leki = generateLayer("Leki", pinLeki);
+let nakretki = generateLayer("Nakrętki", pinNakretki);
+let butelki = generateLayer("Butelki", pinNakretki);
+let pszok = generateLayer("PSZOK", pinNakretki);
+let mgo = generateLayer("MGO", pinNakretki);
 
 const CollectionsMapScreen = () => {
     const [filter, setFilter] = useState([]);

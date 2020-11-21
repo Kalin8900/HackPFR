@@ -10,6 +10,7 @@ import Header from './components/Header';
 import LoginScreen from "./screens/LoginScreen";
 import CityScreen from "./screens/CityScreen";
 import CovidScreen from "./screens/CovidScreen";
+import CovidUploadScreen from "./screens/CovidUploadScreen";
 import DeclarationsScreen from "./screens/DeclarationsScreen";
 import './App.css';
 import './index.css';
@@ -44,6 +45,7 @@ function App() {
                     <Route path='/log' exact component={LoginScreen} />
                     <Route path='/cityPanel' exact component={CityScreen} />
                     <Route path='/covid' exact component={CovidScreen} />
+                    <Route path='/covidUpload' exact component={CovidUploadScreen} />
                     <Route path='/declarations' exact component={DeclarationsScreen} />
                     <Route path='*' exact component={NotFound} />
                 </Switch>

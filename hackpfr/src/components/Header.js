@@ -26,7 +26,7 @@ function Header() {
                 </Navbar.Brand>
             </Navbar>
         );
-    else if (window.location.pathname === '/cityPanel' || window.location.pathname === '/covid' || window.location.pathname === '/declarations')
+    else if (window.location.pathname === '/cityPanel' || window.location.pathname === '/covid' || window.location.pathname === '/covidUpload' || window.location.pathname === '/declarations')
         return (
             <Navbar fixed="top" collapseOnSelect expand="lg" sticky="top" className='navigation'>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
