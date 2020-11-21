@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import declarations from '../assets/geodata/declarations_done.json';
 import markerIcon from "../assets/graphics/marker.png"
+//import { MarkerCluster } from '../components/clusters/src/MarkerCluster.js';
+//import { MarkerClusterGroup } from '../components/clusters/src/MarkerClusterGroup.js';
 import L from "leaflet";
 
 let mymap;
@@ -20,12 +22,17 @@ const CollectionsMapScreen = () => {
             iconAnchor: [20, 20],
             popupAnchor: [-30, -76]
         });
+/*
+		let markers = L.markerClusterGroup();
 
         for (let i = 0; i < declarations.features.length; i++) {
-            ;
-        }
-
-        //mymap.addLayer(markers);
+			let a = declarations.features[i].geometry.coordinates;
+			let marker = L.marker(new L.LatLng(a[0], a[1]), { title: "title" });
+			marker.bindPopup("title");
+			markers.addLayer(marker);
+		}
+		mymap.addLayer(markers);
+*/
     }, []);
 
     return (
