@@ -1,0 +1,232 @@
+@charset "utf-8";
+	.ranking-header_1_
+{
+	background : #BFDEDE;
+	background : rgba(191, 222, 222, 1);
+	position : absolute ;
+	left : 1493px;
+	top : 174px;
+	width : 427px;
+	height : 75px;
+	border-radius : 10px 0px 0px 0px;
+	-moz-border-radius : 10px 0px 0px 0px;
+	-webkit-border-radius : 10px 0px 0px 0px;
+}
+.banner-menu_1_
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 0px;
+	top : 0px;
+	width : 1920px;
+	height : 149px;
+}
+.highlight_1_
+{
+	background : #BAEB87;
+	background : rgba(186, 235, 135, 1);
+	position : absolute ;
+	left : 640px;
+	top : 0px;
+	width : 213px;
+	height : 149px;
+}
+.row3_1_
+{
+	background : #F1F5F5;
+	background : rgba(241, 245, 245, 1);
+	position : absolute ;
+	left : 1493px;
+	top : 500px;
+	width : 427px;
+	height : 49px;
+}
+.row1_1_
+{
+	background : #F1F5F5;
+	background : rgba(241, 245, 245, 1);
+	position : absolute ;
+	left : 1493px;
+	top : 299px;
+	width : 427px;
+	height : 50px;
+}
+.ranking_1_
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 1493px;
+	top : 174px;
+	width : 427px;
+	height : 427px;
+	border-radius : 10px 0px 0px 10px;
+	-moz-border-radius : 10px 0px 0px 10px;
+	-webkit-border-radius : 10px 0px 0px 10px;
+}
+.logo_2_
+{
+	background-image : url(logo.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 116px;
+	top : 49px;
+	width : 194px;
+	height : 51px;
+}
+.row2_1_
+{
+	background : #F1F5F5;
+	background : rgba(241, 245, 245, 1);
+	position : absolute ;
+	left : 1493px;
+	top : 400px;
+	width : 427px;
+	height : 50px;
+}
+.filter_1_
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 0px;
+	top : 174px;
+	width : 400px;
+	height : 593px;
+	border-radius : 0px 8px 8px 0px;
+	-moz-border-radius : 0px 8px 8px 0px;
+	-webkit-border-radius : 0px 8px 8px 0px;
+}
+.filter-highlight_1_
+{
+	background : #BAEB87;
+	background : rgba(186, 235, 135, 1);
+	position : absolute ;
+	left : 0px;
+	top : 341px;
+	width : 400px;
+	height : 76px;
+}
+.NormalCharacterStyle13
+{
+	font-family : Manrope;
+	font-size : 30px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle1
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle2
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle4
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle5
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle3
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle6
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle7
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle9
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle8
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle10
+{
+	font-family : Manrope;
+	font-size : 25px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle11
+{
+	font-family : Manrope;
+	font-size : 30px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle12
+{
+	font-family : Manrope;
+	font-size : 30px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.filter-header_1_
+{
+	background : #BFDEDE;
+	background : rgba(191, 222, 222, 1);
+	position : absolute ;
+	left : 0px;
+	top : 174px;
+	width : 400px;
+	height : 75px;
+	border-radius : 1px 12px 0px 1px;
+	-moz-border-radius : 1px 12px 0px 1px;
+	-webkit-border-radius : 1px 12px 0px 1px;
+}
