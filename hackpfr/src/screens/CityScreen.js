@@ -40,10 +40,10 @@ const CityScreen = props => {
                     <Col>
                         {
                             (logged === 'urząd') ?
-                                <BigButton style={coloredBtnStyle} className='homeBtn' path='/declarations'>
+                                <BigButton style={coloredBtnStyle} className='homeBtn logBtn' path='/declarations'>
                                     Mapa deklaracji
                                 </BigButton> :
-                                <BigButton style={coloredBtnStyle} className='homeBtn' disabled path='/declarations'>
+                                <BigButton style={coloredBtnStyle} className='homeBtn logBtn dis' disabled path='/declarations'>
                                     Mapa deklaracji
                                 </BigButton>
 
@@ -51,7 +51,7 @@ const CityScreen = props => {
 
                     </Col>
                     <Col>
-                        <BigButton style={coloredBtnStyle} className='homeBtn' path='/covid'>
+                        <BigButton style={coloredBtnStyle} className='homeBtn logBtn' path='/covid'>
                             Mapa COVID
                         </BigButton>
                     </Col>

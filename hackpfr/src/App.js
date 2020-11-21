@@ -14,6 +14,7 @@ import './index.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import database from "./firebase";
 import mainTheme from "./assets/graphics/theme";
+import NotFound from "./screens/404";
 const mt = mainTheme;
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                     <Route path='/update' exact component={UpdateCollection} />
                     <Route path='/log' exact component={LoginScreen} />
                     <Route path='/cityPanel' exact component={CityScreen} />
+                    <Route path='*' exact component={NotFound} />
                 </Switch>
             </Router>
         </div>

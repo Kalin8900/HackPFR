@@ -64,6 +64,10 @@
   padding: 0 3vw !important;
 }
 
+.navItem:hover {
+  background-color: rgba(186, 235, 135, 1) !important;
+}
+
 .logo {
   margin-left: 5vw;
   min-width : 194px;
@@ -77,4 +81,26 @@
   padding: 0;
   min-width: 100vw;
   min-height: 88vh;
+}
+
+.homeBtn:hover {
+  background-color: rgba(186, 235, 135, 1) !important;
+  color: white !important;
+}
+
+.homeBtn.dis:hover {
+  background-color: rgba(204, 204, 204, 1) !important;
+}
+
+.dis {
+  background-color: rgba(204, 204, 204, 1) !important;
+}
+
+.smallHomeBtn:hover {
+  background-color: rgba(186, 235, 135, 1) !important;
+  color: white !important;
+}
+
+.logBtn:hover {
+  background-color: rgba(141, 228, 51, 1) !important;
 }
