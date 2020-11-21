@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-=======
-	"declarations": {
->>>>>>> a2586d2c79f71bd1df411c8832672242c68dd614
 "type": "FeatureCollection",
 "name": "declarations_done",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
@@ -9546,7 +9542,3 @@
 { "type": "Feature", "properties": { "ULica_nr": "Wschodnia 9A", "old_address": null, "type": null, "recycling": null, "people": null, "bins": null, "glass": null }, "geometry": { "type": "Point", "coordinates": [ 23.515969113144223, 51.141989851301766 ] } }
 ]
 }
-<<<<<<< HEAD
-=======
-}
->>>>>>> a2586d2c79f71bd1df411c8832672242c68dd614
