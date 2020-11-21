@@ -1,0 +1,80 @@
+@charset "utf-8";
+	.banner-menu
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 0px;
+	top : 0px;
+	width : 1920px;
+	height : 150px;
+}
+.highlight
+{
+	background : #BAEB87;
+	background : rgba(186, 235, 135, 1);
+	position : absolute ;
+	left : 640px;
+	top : 0px;
+	width : 213px;
+	height : 150px;
+}
+.background
+{
+	background : #E8EFEF;
+	background : rgba(232, 239, 239, 1);
+	position : absolute ;
+	left : 0px;
+	top : 150px;
+	width : 1920px;
+	height : 930px;
+}
+.NormalCharacterStyle
+{
+	font-family : Manrope;
+	font-size : 50px;
+	line-height : 75px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle1
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle2
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.NormalCharacterStyle3
+{
+	font-family : Manrope;
+	font-size : 30px;
+	color : #333333;
+	color : rgb(51, 51, 51);
+}
+.image
+{
+	background-image : url(image.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 816px;
+	top : 471px;
+	width : 292px;
+	height : 251px;
+}
+.logo
+{
+	background-image : url(logo.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 116px;
+	top : 49px;
+	width : 194px;
+	height : 51px;
+}

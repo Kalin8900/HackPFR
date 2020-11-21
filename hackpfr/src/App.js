@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'leaflet/dist/leaflet.css';
 import HomeScreen from './screens/HomeScreen';
@@ -12,8 +12,19 @@ import CityScreen from "./screens/CityScreen";
 import './App.css';
 import './index.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import database from "./firebase";
 
 function App() {
+
+    useEffect(() => {
+        const testRef = database.ref('test');
+
+        testRef.on('value', (snap) => {
+            const data = snap.val();
+            console.log("Logging data from Firebase", data);
+        });
+    })
+
     return (
         <div className="App">
             <Header />
