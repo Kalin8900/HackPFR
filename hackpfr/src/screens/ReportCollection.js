@@ -117,7 +117,7 @@ function ReportCollection() {
     return (
         <Container className='page' style={{backgroundColor: mt.colors.pageBackground }}>
             <Container style={{ textAlign: 'left'}}>
-                <Modal size="lg" centered show={modalShow} onHide={() => setModalShow(false)}>
+                <Modal size="lg" centered show={modalShow} onHide={() => setModalShow(false)} style={{height: '102vh', marginTop: 0}}>
                     <Modal.Header closeButton>
                         <Modal.Title>Wybierz adres</Modal.Title>
                     </Modal.Header>

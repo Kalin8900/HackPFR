@@ -18,6 +18,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import database from "./firebase";
 import mainTheme from "./assets/graphics/theme";
 import NotFound from "./screens/404";
+import StatsScreen from "./screens/StatsScreen";
 const mt = mainTheme;
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
                     <Route path='/throw' exact component={CollectionsMapScreen} />
                     <Route path='/reportCollection' exact component={ReportCollection} />
                     <Route path='/reportIsolation' exact component={ReportIsolation} />
-                    <Route path='/stats' exact component={HomeScreen} />
+                    <Route path='/stats' exact component={StatsScreen} />
                     <Route path='/update' exact component={UpdateCollection} />
                     <Route path='/log' exact component={LoginScreen} />
                     <Route path='/cityPanel' exact component={CityScreen} />

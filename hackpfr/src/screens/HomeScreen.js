@@ -20,7 +20,7 @@ function HomeScreen() {
             <Container>
                 <Row>
                     <Col>
-                        <BigButton className="homeBtn" style={btnStyle} path='/throw'>Akutalne zbiórki</BigButton>
+                        <BigButton className="homeBtn" style={btnStyle} path='/throw'>Aktualne zbiórki</BigButton>
                     </Col>
                     <Col>
                         <BigButton className='smallHomeBtn' style={upperBtn} path='/reportCollection'>Zgłoś zbiórkę</BigButton>
