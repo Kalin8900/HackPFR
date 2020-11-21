@@ -112,7 +112,7 @@ const CollectionsMapScreen = () => {
     return (
         <div id="mapid">
             <CollectionSummary />
-            <MapFiltering filter={filter} setFilter={setFilter} />
+            <MapFiltering filter={filter} setFilter={setFilter} screen="CollectionsMapScreen" />
         </div>
     );
 }
