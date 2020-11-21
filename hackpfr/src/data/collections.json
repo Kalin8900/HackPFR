@@ -1,0 +1,92 @@
+{
+    "type": "FeatureCollection",
+    "name": "collections",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 1,
+                "name": "Wielka zbiórka kapsli",
+                "organizer": "Szkoła Podstawowa nr 4 im. Kardynała Stefana Wyszyńskiego",
+                "created": "2020-11-20",
+                "fraction": "Nakrętki plastikowe",
+                "amount": 136,
+                "phone": "659442663"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.497027,
+                    51.128602,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Zbieramy makulaturę",
+                "organizer": "Szkoła Podstawowa nr 4 im. Kardynała Stefana Wyszyńskiego",
+                "created": "2020-11-11",
+                "fraction": "Makulatura",
+                "amount": 81,
+                "phone": "659442663"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.497027,
+                    51.128602,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 3,
+                "name": "Oddaj stare ładowarki",
+                "organizer": "Szkoła Podstawowa nr 4 im. Kardynała Stefana Wyszyńskiego",
+                "created": "2020-11-16",
+                "fraction": "Elektronika",
+                "amount": 7,
+                "phone": "659442663"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.497027,
+                    51.128602,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 4,
+                "name": "Zbiórka wyrobów metalowych",
+                "organizer": "Państwowa Wyższa Szkoła Zawodowa w Chełmie",
+                "created": "2020-11-18",
+                "fraction": "Metal",
+                "amount": 351,
+                "phone": "659442663"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.480456,
+                    51.129948,
+                    0.0
+                ]
+            }
+        }
+    ]
+}
