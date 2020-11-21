@@ -9,6 +9,8 @@ import L from "leaflet";
 import axios from 'axios';
 import MaskedFormControl from 'react-bootstrap-maskedinput';
 import { Link } from 'react-router-dom';
+import mainTheme from "../assets/graphics/theme";
+const mt = mainTheme;
 
 async function requestAddress(coords) {
     let result;
@@ -111,8 +113,8 @@ function ReportIsolation() {
     }
 
     return (
-        <>
-            <Container style={{ textAlign: 'left', marginTop: '4vh' }}>
+        <Container className='page' style={{backgroundColor: mt.colors.pageBackground}}>
+            <Container style={{ textAlign: 'left'}}>
                 <Modal size="lg" centered show={modalShow} onHide={() => setModalShow(false)}>
                     <Modal.Header closeButton>
                         <Modal.Title>Wybierz adres</Modal.Title>
@@ -183,16 +185,17 @@ function ReportIsolation() {
                         </Card.Body>
                     </Card>
                 }
+                {
+                    mode === 3 &&
+                    <div style={{ justifyContent: "center", display: 'flex', flexFlow: 'column', alignItems: 'center', gap: '3.5vh'}}>
+                        <FontAwesomeIcon color='green' icon={faCheckCircle} size="4x" />
+                        <h1 style={{}}>Miejsce pomyślnie dodane</h1>
+                        <Link to="/"><Button variant="success">Strona główna</Button></Link>
+                    </div>
+                }
             </Container>
-            {
-                mode === 3 &&
-                <div style={{ justifyContent: 'center' }}>
-                    <FontAwesomeIcon color='green' icon={faCheckCircle} size="4x" />
-                    <h1 style={{ margin: '5vh' }}>Miejsce pomyślnie dodane</h1>
-                    <Link to="/"><Button variant="success">Strona główna</Button></Link>
-                </div>
-            }
-        </>
+
+        </Container>
     );
 }
 

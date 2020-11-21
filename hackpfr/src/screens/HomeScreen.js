@@ -7,18 +7,23 @@ import {btnStyle, coloredBtnStyle} from "../assets/graphics/styles";
 
 const mt = mainTheme;
 
-
+const upperBtn = {
+    ...btnStyle,
+    marginBottom: '1vw'
+}
 
 function HomeScreen() {
+
+
     return (
         <Container className='page' style={{background: mt.colors.pageBackground}}>
             <Container>
                 <Row>
                     <Col>
-                        <BigButton className="homeBtn" style={btnStyle} path='/throw'>Akutalne zbiórki</BigButton>
+                        <BigButton className="homeBtn" style={btnStyle} path='/throw'>Aktualne zbiórki</BigButton>
                     </Col>
                     <Col>
-                        <BigButton className='smallHomeBtn' style={coloredBtnStyle} path='/reportCollection'>Zgłoś zbiórkę</BigButton>
+                        <BigButton className='smallHomeBtn' style={upperBtn} path='/reportCollection'>Zgłoś zbiórkę</BigButton>
                         <BigButton className='smallHomeBtn' style={btnStyle} path='/update'>Zaktualizuj zbiórkę</BigButton>
                     </Col>
                     <Col>

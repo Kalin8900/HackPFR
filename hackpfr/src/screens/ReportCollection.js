@@ -8,6 +8,9 @@ import { faMapMarker, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import L from "leaflet";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import mainTheme from "../assets/graphics/theme";
+const mt = mainTheme;
+
 
 async function requestAddress(coords) {
     let result;
@@ -112,9 +115,9 @@ function ReportCollection() {
     }
 
     return (
-        <>
-            <Container style={{ textAlign: 'left', marginTop: '4vh' }}>
-                <Modal size="lg" centered show={modalShow} onHide={() => setModalShow(false)}>
+        <Container className='page' style={{backgroundColor: mt.colors.pageBackground }}>
+            <Container style={{ textAlign: 'left'}}>
+                <Modal size="lg" centered show={modalShow} onHide={() => setModalShow(false)} style={{height: '102vh', marginTop: 0}}>
                     <Modal.Header closeButton>
                         <Modal.Title>Wybierz adres</Modal.Title>
                     </Modal.Header>
@@ -168,7 +171,7 @@ function ReportCollection() {
                     </Card>
                 }{
                     mode === 2 &&
-                    <Card>
+                    <Card style={{marginBottom: '20vh'}}>
                         <Card.Header>DODAWANIE ZBIÓRKI</Card.Header>
                         <Card.Body>
                             <Card.Title>Weryfikacja:</Card.Title>
@@ -184,16 +187,17 @@ function ReportCollection() {
                         </Card.Body>
                     </Card>
                 }
+                {
+                    mode === 3 &&
+                    <div style={{justifyContent: "center", display: 'flex', flexFlow: 'column', alignItems: 'center', gap: '3.5vh'}}>
+                        <FontAwesomeIcon color='green' icon={faCheckCircle} size="4x" />
+                        <h1 style={{ alignSelf: 'center' }}>Zbiórka pomyślnie dodana</h1>
+                        <Link to="/"><Button variant="success">Strona główna</Button></Link>
+                    </div>
+                }
             </Container>
-            {
-                mode === 3 &&
-                <div style={{ justifyContent: 'center' }}>
-                    <FontAwesomeIcon color='green' icon={faCheckCircle} size="4x" />
-                    <h1 style={{ margin: '5vh' }}>Zbiórka pomyślnie dodana</h1>
-                    <Link to="/"><Button variant="success">Strona główna</Button></Link>
-                </div>
-            }
-        </>
+
+        </Container>
     );
 }
 
