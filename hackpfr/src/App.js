@@ -18,7 +18,7 @@ function App() {
             <Router>
                 <Switch>
                     <Route path='/' exact component={HomeScreen} />
-                    <Route path='/throw' exact component={HomeScreen} />
+                    <Route path='/throw' exact component={CollectionsMapScreen} />
                     <Route path='/reportCollection' exact component={HomeScreen} />
                     <Route path='/reportIsolation' exact component={HomeScreen} />
                     <Route path='/stats' exact component={HomeScreen} />
