@@ -12,7 +12,7 @@ class UpdateCollection extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mode: 0,
+            mode: 1,
             data: [],
             modalShow: null
         }
@@ -146,7 +146,7 @@ class UpdateCollection extends React.Component {
                     </Modal.Footer>
                 </Modal>
                 {
-                    this.state.mode === 0 &&
+                    this.state.mode === 1 &&
                     <Card>
                         <Card.Header>AKTUALIZACJA ZBIÓRKI</Card.Header>
                         <Card.Body>
@@ -158,13 +158,13 @@ class UpdateCollection extends React.Component {
                                         <Form.Control type="email" placeholder="Wprowadź numer telefonu" />
                                         <Form.Text className="text-muted">Ten sam, który wprowadzono przy tworzeniu zbiórki.</Form.Text>
                                     </Form.Group>
-                                    <Button variant="success" onClick={() => this.setState({ mode: 1 })}>Dalej</Button>
+                                    <Button variant="success" block onClick={() => this.setState({ mode: 2 })}>Dalej</Button>
                                 </Form>
                             </Container>
                         </Card.Body>
                     </Card>
                 }{
-                    this.state.mode === 1 &&
+                    this.state.mode === 2 &&
                     <Card>
                         <Card.Header>AKTUALIZACJA ZBIÓRKI</Card.Header>
                         <Card.Body>
@@ -175,13 +175,13 @@ class UpdateCollection extends React.Component {
                                         <Form.Label>Wprwadź kod, który wysłaliśmy SMS na Twój telefon</Form.Label>
                                         <Form.Control type="email" placeholder="Wprowadź kod weryfikujący" />
                                     </Form.Group>
-                                    <Button variant="success" onClick={() => {toast.success('Zweryfikowano poprawnie'); this.setState({ mode: 2 })}}>Dalej</Button>
+                                    <Button variant="success" block onClick={() => {toast.success('Zweryfikowano poprawnie'); this.setState({ mode: 3 })}}>Dalej</Button>
                                 </Form>
                             </Container>
                         </Card.Body>
                     </Card>
                 }{
-                    this.state.mode === 2 &&
+                    this.state.mode === 3 &&
                     <Card>
                         <Card.Header>AKTUALIZACJA ZBIÓRKI</Card.Header>
                         <Card.Body>
