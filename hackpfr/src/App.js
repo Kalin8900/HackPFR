@@ -13,6 +13,8 @@ import './App.css';
 import './index.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import database from "./firebase";
+import mainTheme from "./assets/graphics/theme";
+const mt = mainTheme;
 
 function App() {
 
@@ -26,7 +28,7 @@ function App() {
     })
 
     return (
-        <div className="App">
+        <div className="App" style={{fontFamily: mt.font.defaultFont, color: mt.colors.black}}>
             <Header />
             <Router>
                 <Switch>
