@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.homeBtn {
+  height: 80vh;
+}
+
+.smallHomeBtn {
+  height: 38.75vh;
+}
+
+.logScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
