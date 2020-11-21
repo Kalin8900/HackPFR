@@ -11,8 +11,8 @@
 }
 .highlight
 {
-	background : #A4D381;
-	background : rgba(164, 211, 129, 1);
+	background : #BAEB87;
+	background : rgba(186, 235, 135, 1);
 	position : absolute ;
 	left : 640px;
 	top : 0px;
@@ -21,8 +21,8 @@
 }
 .background
 {
-	background : #EBF0E7;
-	background : rgba(235, 240, 231, 1);
+	background : #E8EFEF;
+	background : rgba(232, 239, 239, 1);
 	position : absolute ;
 	left : 0px;
 	top : 150px;

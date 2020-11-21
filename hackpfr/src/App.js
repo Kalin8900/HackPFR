@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'leaflet/dist/leaflet.css';
 import HomeScreen from './screens/HomeScreen';
 import UpdateCollection from './screens/UpdateCollection';
+import ReportCollection from './screens/ReportCollection';
+import ReportIsolation from './screens/ReportIsolation';
 import CollectionsMapScreen from './screens/CollectionsMapScreen';
 import Header from './components/Header';
 import LoginScreen from "./screens/LoginScreen";
@@ -32,8 +34,8 @@ function App() {
                 <Switch>
                     <Route path='/' exact component={HomeScreen} />
                     <Route path='/throw' exact component={CollectionsMapScreen} />
-                    <Route path='/reportCollection' exact component={HomeScreen} />
-                    <Route path='/reportIsolation' exact component={HomeScreen} />
+                    <Route path='/reportCollection' exact component={ReportCollection} />
+                    <Route path='/reportIsolation' exact component={ReportIsolation} />
                     <Route path='/stats' exact component={HomeScreen} />
                     <Route path='/update' exact component={UpdateCollection} />
                     <Route path='/log' exact component={LoginScreen} />
