@@ -104,3 +104,7 @@
 .logBtn:hover {
   background-color: rgba(141, 228, 51, 1) !important;
 }
+
+.list-group-item-light.list-group-item-action.active {
+  background-color: rgba(186, 235, 135, 1) !important;
+}
