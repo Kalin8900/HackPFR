@@ -6,6 +6,8 @@ import filtrLeki from '../assets/graphics/filtr_leki.svg';
 import filtrMakulatura from '../assets/graphics/filtr_makulatura.svg';
 import filtrMetale from '../assets/graphics/filtr_metale.svg';
 import filtrNakretki from '../assets/graphics/filtr_nakretki.svg';
+import filtrMgo from '../assets/graphics/filtr_mgo.svg';
+import filtrPszok from '../assets/graphics/filtr_pszok.svg';
 
 function removeElement(array, element) {
     let result = [];
@@ -36,8 +38,8 @@ const MapFiltering = (props) => {
                     <FilteredElement name="Elektronika" icon={filtrElektronika} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="Butelki" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="Nakrętki" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="PSZOK" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
-                    <FilteredElement name="MGO" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="PSZOK" icon={filtrPszok} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="MGO" icon={filtrMgo} filter={props.filter} setFilter={props.setFilter} />
                 </ListGroup>
             </div>
         );

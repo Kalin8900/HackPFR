@@ -9,6 +9,8 @@ import pinLeki from "../assets/graphics/pin-leki.svg";
 import pinMakulatura from "../assets/graphics/pin-makulatura.svg";
 import pinNakretki from "../assets/graphics/pin-nakretki.svg";
 import pinMetale from "../assets/graphics/pin-metale.svg";
+import pinPszok from "../assets/graphics/pin-pszok.svg";
+import pinMgo from "../assets/graphics/pin-mgo.svg";
 
 function generateLayer(fraction, icon) {
     let markerImage = L.icon({
@@ -40,8 +42,8 @@ let elektronika = generateLayer("Elektronika", pinElektronika);
 let leki = generateLayer("Leki", pinLeki);
 let nakretki = generateLayer("Nakrętki", pinNakretki);
 let butelki = generateLayer("Butelki", pinNakretki);
-let pszok = generateLayer("PSZOK", pinNakretki);
-let mgo = generateLayer("MGO", pinNakretki);
+let pszok = generateLayer("PSZOK", pinPszok);
+let mgo = generateLayer("MGO", pinMgo);
 
 const CollectionsMapScreen = () => {
     const [filter, setFilter] = useState([]);
