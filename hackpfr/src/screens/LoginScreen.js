@@ -3,6 +3,8 @@ import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import {Container, Row, Col, Button, Alert, Form} from 'react-bootstrap';
 import {Redirect, useRouteMatch} from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
+import mainTheme from "../assets/graphics/theme";
+const mt = mainTheme;
 
 const LoginForm = props => {
     const [logged, setLogged] = useState(false);
@@ -31,7 +33,7 @@ const LoginForm = props => {
     }
 
     return (
-        <Col xs={3}>
+        <Col xs={3} style={props.style}>
             <h1>
                 Zaloguj się
             </h1>
@@ -57,9 +59,9 @@ const LoginForm = props => {
 const LoginScreen = props => {
 
     return (
-        <Container className={'logScreen'}>
+        <Container className='page' style={{background: mt.colors.pageBackground, justifyContent: 'center'}}>
             <ToastContainer />
-            <LoginForm  />
+            <LoginForm  style={{marginBottom: '15vh'}}/>
 
         </Container>
 )
