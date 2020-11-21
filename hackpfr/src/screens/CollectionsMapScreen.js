@@ -45,8 +45,6 @@ const CollectionsMapScreen = () => {
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(mymap)
-
-        setFilter([]);
     }, []);
 
     useEffect(() => {
@@ -92,7 +90,6 @@ const CollectionsMapScreen = () => {
 
     return (
         <div id="mapid">
-            {/*<LayersControler/> #tutaj fajnie jakby był ten layer control z Open Beer Maps# */}
             <CollectionSummary />
             <MapFiltering filter={filter} setFilter={setFilter} />
         </div>
