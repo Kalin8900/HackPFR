@@ -38,11 +38,11 @@
 }
 
 .homeBtn {
-  height: 80vh;
+  height: 52vh;
 }
 
 .smallHomeBtn {
-  height: 38.75vh;
+  height: 24vh;
 }
 
 .logScreen {
@@ -51,3 +51,31 @@
   align-items: center;
 }
 
+.navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 12vh;
+  padding: 0 3vw !important;
+}
+
+.logo {
+  margin-left: 5vw;
+  min-width : 194px;
+  min-height : 51px
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 90vh;
+}
