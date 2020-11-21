@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import L from "leaflet";
+import { Button } from 'react-bootstrap';
 import collections from "../assets/geodata/collections.json"
 import markerIcon from "../assets/graphics/marker.png"
 import MapFiltering from "../components/MapFiltering"
+import { Link } from 'react-router-dom';
 
 function generateLayer(type) {
     return L.geoJson(collections, {
@@ -69,8 +71,23 @@ const CollectionsMapScreen = () => {
     return (
         <div id="mapid">
             <MapFiltering filter={filter} setFilter={setFilter} screen="CovidScreen" />
+            <div id="csvUpload" style={csvUploadStyle}>
+                <Link to="/covidUpload"><Button>Importuj zakażonych z CSV</Button></Link>
+            </div>
         </div>
     );
+}
+
+const csvUploadStyle = {
+    'width': 200,
+    'borderRadius': "10px",
+    'position': "absolute",
+    'right': 20,
+    'marginTop': "5vh",
+    'background': "rgba(255,255,255,1)",
+    'filter': "drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.161))",
+    'zIndex': 1000,
+    'padding': 10
 }
 
 export default CollectionsMapScreen;
