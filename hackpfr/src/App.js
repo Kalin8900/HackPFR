@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MainScreen from './screens/MainScreen';
+import HomeScreen from './screens/HomeScreen';
 import Header from './components/Header';
 import './App.css';
 import './index.css';
@@ -12,9 +12,9 @@ function App() {
             <Header />
             <Router>
                 <Switch>
-                    <Route path='/' exact component={MainScreen} />
-                    <Route path='/bins' exact component={MainScreen} />
-                    <Route path='/cases' exact component={MainScreen} />
+                    <Route path='/' exact component={HomeScreen} />
+                    <Route path='/bins' exact component={HomeScreen} />
+                    <Route path='/cases' exact component={HomeScreen} />
                 </Switch>
             </Router>
         </div>
