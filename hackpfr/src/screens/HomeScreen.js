@@ -8,14 +8,14 @@ function HomeScreen() {
         <Container>
             <Row>
                 <Col>
-                    <BigButton path='/throw'>Oddaj śmieci</BigButton>
+                    <BigButton className="homeBtn" path='/throw'>Oddaj śmieci</BigButton>
                 </Col>
                 <Col>
-                    <BigButton path='/reportCollection'>Zgłoś zbiórkę</BigButton>
-                    <BigButton path='/update'>Aktualizuj zbiórkę</BigButton>
+                    <BigButton className='smallHomeBtn' path='/reportCollection'>Zgłoś zbiórkę</BigButton>
+                    <BigButton className='smallHomeBtn' path='/update'>Aktualizuj zbiórkę</BigButton>
                 </Col>
                 <Col>
-                    <BigButton path='/reportIsolation'>Zgłoś izolację</BigButton>
+                    <BigButton className='homeBtn' path='/reportIsolation'>Zgłoś izolację</BigButton>
                 </Col>
             </Row>
         </Container>

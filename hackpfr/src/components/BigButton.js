@@ -5,7 +5,7 @@ const BigButton = props => {
 
     return (
         <Nav.Link href={props.path}>
-            <Button size={"lg"} block>
+            <Button className={props.className} size={"lg"} block {...props}>
                 {props.children}
             </Button>
         </Nav.Link>

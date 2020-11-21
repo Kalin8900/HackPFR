@@ -2,6 +2,7 @@ import React, {useState, useRef, useContext, Component} from "react";
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import {Container, Row, Col, Button, Alert, Form} from 'react-bootstrap';
 import {Redirect, useRouteMatch} from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
 
 const LoginForm = props => {
     const [logged, setLogged] = useState(false);
@@ -9,13 +10,25 @@ const LoginForm = props => {
     const passInput = useRef(null);
     const {path, url} = useRouteMatch();
 
+
+    //MAKIETA
     const click = () => {
-        if(loginInput.current.value === 'admin' && passInput.current.value === 'admin123')
+        if(loginInput.current.value === 'urzad' && passInput.current.value === 'urzad123')
+        {
             setLogged(true);
+            document.cookie = 'user=urząd cnt=1 ';
+        }
+        else if(loginInput.current.value === 'san' && passInput.current.value === 'san123')
+        {
+            setLogged(true);
+            document.cookie = 'user=sanepid cnt=1 ';
+        }
+        else
+            toast.error('Nie udało się zalogować na podany login i hasło');
     }
 
     return (
-        <Col block>
+        <Col xs={3}>
             <h1>
                 Zaloguj się
             </h1>
@@ -41,7 +54,8 @@ const LoginForm = props => {
 const LoginScreen = props => {
 
     return (
-        <Container>
+        <Container className={'logScreen'}>
+            <ToastContainer />
             <LoginForm  />
 
         </Container>
