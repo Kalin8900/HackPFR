@@ -34,6 +34,9 @@ let metal = generateLayer("Metal");
 let elektronika = generateLayer("Elektronika");
 let leki = generateLayer("Leki");
 let nakretki = generateLayer("Nakrętki");
+let butelki = generateLayer("Butelki");
+let pszok = generateLayer("PSZOK");
+let mgo = generateLayer("MGO");
 
 const CollectionsMapScreen = () => {
     const [filter, setFilter] = useState([]);
@@ -78,6 +81,21 @@ const CollectionsMapScreen = () => {
                 nakretki.addTo(mymap);
             else
                 mymap.removeLayer(nakretki);
+
+            if (filter.includes('Butelki'))
+                butelki.addTo(mymap);
+            else
+                mymap.removeLayer(butelki);
+
+            if (filter.includes('PSZOK'))
+                pszok.addTo(mymap);
+            else
+                mymap.removeLayer(pszok);
+
+            if (filter.includes('MGO'))
+                mgo.addTo(mymap);
+            else
+                mymap.removeLayer(mgo);
         } else {
             makulatura.addTo(mymap);
             baterie.addTo(mymap);
@@ -85,6 +103,9 @@ const CollectionsMapScreen = () => {
             elektronika.addTo(mymap);
             leki.addTo(mymap);
             nakretki.addTo(mymap);
+            butelki.addTo(mymap);
+            pszok.addTo(mymap);
+            mgo.addTo(mymap);
         }
     }, [filter]);
 

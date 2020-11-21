@@ -25,12 +25,15 @@ const MapFiltering = (props) => {
         <div style={mapFilteringStyle}>
             <h6 style={{ margin: '2vh' }}>FILTROWANIE</h6>
             <ListGroup>
-                <FilteredElement name="Makulatura" icon={faCopy} filter={props.filter} setFilter={props.setFilter} />
+                <FilteredElement name="Leki" icon={faPills} filter={props.filter} setFilter={props.setFilter} />
                 <FilteredElement name="Baterie" icon={faBatteryQuarter} filter={props.filter} setFilter={props.setFilter} />
+                <FilteredElement name="Makulatura" icon={faCopy} filter={props.filter} setFilter={props.setFilter} />
                 <FilteredElement name="Metal" icon={faTools} filter={props.filter} setFilter={props.setFilter} />
                 <FilteredElement name="Elektronika" icon={faBolt} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="Leki" icon={faPills} filter={props.filter} setFilter={props.setFilter} />
+                <FilteredElement name="Butelki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
                 <FilteredElement name="Nakrętki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
+                <FilteredElement name="PSZOK" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
+                <FilteredElement name="MGO" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
             </ListGroup>
         </div>
     );
@@ -39,7 +42,7 @@ const MapFiltering = (props) => {
 export default MapFiltering;
 
 const mapFilteringStyle = {
-    'height': "80vh",
+    'height': "50vh",
     'width': 200,
     'borderRadius': "10px",
     'position': "absolute",
