@@ -9,9 +9,11 @@ import CollectionsMapScreen from './screens/CollectionsMapScreen';
 import Header from './components/Header';
 import LoginScreen from "./screens/LoginScreen";
 import CityScreen from "./screens/CityScreen";
+import CovidScreen from "./screens/CovidScreen";
+import DeclarationsScreen from "./screens/DeclarationsScreen";
 import './App.css';
 import './index.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import database from "./firebase";
 import mainTheme from "./assets/graphics/theme";
 const mt = mainTheme;
@@ -40,6 +42,8 @@ function App() {
                     <Route path='/update' exact component={UpdateCollection} />
                     <Route path='/log' exact component={LoginScreen} />
                     <Route path='/cityPanel' exact component={CityScreen} />
+                    <Route path='/covid' exact component={CovidScreen} />
+                    <Route path='/declarations' exact component={DeclarationsScreen} />
                 </Switch>
             </Router>
         </div>

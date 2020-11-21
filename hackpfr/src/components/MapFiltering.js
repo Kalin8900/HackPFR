@@ -20,29 +20,39 @@ const FilteredElement = (props) => {
 }
 
 const MapFiltering = (props) => {
-
-    return (
-        <div style={mapFilteringStyle}>
-            <h6 style={{ margin: '2vh' }}>FILTROWANIE</h6>
-            <ListGroup>
-                <FilteredElement name="Leki" icon={faPills} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="Baterie" icon={faBatteryQuarter} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="Makulatura" icon={faCopy} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="Metal" icon={faTools} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="Elektronika" icon={faBolt} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="Butelki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="Nakrętki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="PSZOK" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
-                <FilteredElement name="MGO" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
-            </ListGroup>
-        </div>
-    );
+    if (props.screen === 'CollectionsMapScreen')
+        return (
+            <div style={mapFilteringStyle}>
+                <h6 style={{ margin: '2vh' }}>FILTROWANIE</h6>
+                <ListGroup>
+                    <FilteredElement name="Leki" icon={faPills} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Baterie" icon={faBatteryQuarter} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Makulatura" icon={faCopy} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Metal" icon={faTools} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Elektronika" icon={faBolt} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Butelki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Nakrętki" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="PSZOK" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="MGO" icon={faRecycle} filter={props.filter} setFilter={props.setFilter} />
+                </ListGroup>
+            </div>
+        );
+    else if (props.screen === 'CovidScreen')
+        return (
+            <div style={mapFilteringStyle}>
+                <h6 style={{ margin: '2vh' }}>FILTROWANIE</h6>
+                <ListGroup>
+                    <FilteredElement name="Izolatoria domowe" icon={faPills} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Ilozatioria stacjonarne" icon={faBatteryQuarter} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Szpitale" icon={faCopy} filter={props.filter} setFilter={props.setFilter} />
+                </ListGroup>
+            </div>
+        );
 }
 
 export default MapFiltering;
 
 const mapFilteringStyle = {
-    'height': "50vh",
     'width': 200,
     'borderRadius': "10px",
     'position': "absolute",
