@@ -1,13 +1,12 @@
 import React from "react";
-import {Container} from "react-bootstrap";
+import { Container, Spinner } from "react-bootstrap";
 import mainTheme from "../assets/graphics/theme";
 const mt = mainTheme;
 
 const PermissionDenied = props => {
-    return(
-        <Container className='page' style={{background: mt.colors.pageBackground, justifyContent: 'center', flexFlow: 'column'}}>
-            <h2>Upss...</h2>
-            <h4>I think you shouldn't be here</h4>
+    return (
+        <Container className='page' style={{ background: mt.colors.pageBackground, justifyContent: 'center', flexFlow: 'column' }}>
+            <Spinner animation="border" variant="info" />
         </Container>
     )
 }
