@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import L from "leaflet";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'leaflet/dist/leaflet.css';
 import HomeScreen from './screens/HomeScreen';

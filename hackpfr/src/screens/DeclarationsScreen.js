@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
+import L from "leaflet";
 import declarations from '../assets/geodata/declarations_done.json';
 import markerIconGreen from "../assets/graphics/pin-doc-zielony.svg";
 import markerIconBlue from "../assets/graphics/pin-doc-niebieski.svg";
 import markerIconBlack from "../assets/graphics/pin-doc-czarny.svg";
 //import { MarkerCluster } from '../components/clusters/src/MarkerCluster.js';
 //import { MarkerClusterGroup } from '../components/clusters/src/MarkerClusterGroup.js';
-import L from "leaflet";
-import '../components/cluster/leaflet.markercluster/dist/leaflet.markercluster-src.js';
+//import '../components/cluster/leaflet.markercluster/dist/leaflet.markercluster-src.js';
 import '../components/cluster/leaflet.markercluster/dist/MarkerCluster.css';
 import '../components/cluster/leaflet.markercluster/dist/MarkerCluster.Default.css';
 import PermissionDenied from "../components/PermissionDenied";
@@ -44,7 +44,7 @@ const CollectionsMapScreen = (props) => {
             iconAnchor: [20, 20],
             popupAnchor: [-30, -76]
         });
-
+/*
         let markers = L.markerClusterGroup({maxClusterRadius: 40});
 
         for (let i = 0; i < declarations.features.length; i++) {
@@ -56,7 +56,7 @@ const CollectionsMapScreen = (props) => {
         }
         
         mymap.addLayer(markers);
-
+*/
     }, []);
 
     if (user.displayName !== 'urząd')
