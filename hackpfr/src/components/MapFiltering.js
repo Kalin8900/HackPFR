@@ -65,7 +65,6 @@ const MapFiltering = (props) => {
 export default MapFiltering;
 
 const mapFilteringStyle = {
-    'width': 200,
     'borderRadius': "10px",
     'position': "absolute",
     'left': -5,
