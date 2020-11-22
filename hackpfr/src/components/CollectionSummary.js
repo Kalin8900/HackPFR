@@ -7,7 +7,7 @@ const CollectionSummary = () => {
         <div id="collectionSummary" style={collectionSummaryStyle}>
             <div style={{}}>
                 <h5 style={{ margin: '2vh' }}>RANKING ZBIÓREK</h5>
-                <h6>Zebrano 5432kg</h6>
+                <h6>Zebrano 5432 kg</h6>
             </div>
             <Table borderless hover striped style={{'background': "rgba(253, 253, 254, 1)"}}>
                 <tbody>

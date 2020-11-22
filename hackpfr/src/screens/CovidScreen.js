@@ -1,37 +1,65 @@
 import React, { useState, useEffect } from "react";
 import L from "leaflet";
 import { Button } from 'react-bootstrap';
-import collections from "../assets/geodata/collections.json"
-import markerIcon from "../assets/graphics/marker.png"
-import MapFiltering from "../components/MapFiltering"
+import MapFiltering from "../components/MapFiltering";
+import hospitals from "../assets/geodata/medicalBuildings_done.json"
+import isolation from "../assets/geodata/isolation.json"
+import pinDomowe from "../assets/graphics/pin-dom.svg";
+import pinStacjonarne from "../assets/graphics/pin-publiczne.svg";
+import pinKwarantanna from "../assets/graphics/pin-virus.svg";
+import pinSzpital from "../assets/graphics/pin-szpital.svg";
 import { Link } from 'react-router-dom';
 
-function generateLayer(type) {
-    return L.geoJson(collections, {
-        filter: function (feature, layer) {
-            return feature.properties.type === type;
-        },
-        pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, {
-                icon: markerImage
-            }).on('mouseover', function () {
-                this.bindPopup(feature.properties.name).openPopup();
-            });
-        }
+function generateLayer(type, icon) {
+    let markerImage = L.icon({
+        iconUrl: icon,
+        iconSize: [35, 35],
+        iconAnchor: [20, 20],
+        popupAnchor: [-3, -17]
     });
+
+    if (type === 'Szpitale')
+        return L.geoJson(hospitals, {
+            filter: function (feature, layer) {
+                return feature.properties.x_skrKarto === "szpit.";
+            },
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: markerImage
+                }).on('mouseover', function () {
+                    this.bindPopup("<b>" + feature.properties.x_informDo + "</b>").openPopup();
+                });
+            }
+        });
+    else
+        return L.geoJson(isolation, {
+            filter: function (feature, layer) {
+                switch (type) {
+                    case 'Izolatoria domowe':
+                        return feature.properties.type === 'isolation';
+                    case 'Izolatoria stacjonarne':
+                        return feature.properties.type === 'public';
+                    case 'Kwarantanna':
+                        return feature.properties.type === 'quarantine';
+                    default:
+                        return false;
+                }
+            },
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: markerImage
+                }).on('mouseover', function () {
+                    this.bindPopup("<b>" + feature.properties.prg_addres + "</b><br/>Liczba osób: " + feature.properties.people).openPopup();
+                });
+            }
+        });
 }
 
-let markerImage = L.icon({
-    iconUrl: markerIcon,
-    iconSize: [25, 25],
-    iconAnchor: [20, 20],
-    popupAnchor: [-30, -76]
-});
-
 let mymap;
-let domowe = generateLayer("Izolatoria domowe");
-let stacjonarne = generateLayer("Izolatoria stacjonarne");
-let szpitale = generateLayer("Szpitale");
+let domowe = generateLayer("Izolatoria domowe", pinDomowe);
+let stacjonarne = generateLayer("Izolatoria stacjonarne", pinStacjonarne);
+let kwarantanna = generateLayer("Kwarantanna", pinKwarantanna);
+let szpitale = generateLayer("Szpitale", pinSzpital);
 
 const CollectionsMapScreen = (props) => {
     const [filter, setFilter] = useState([]);
@@ -58,6 +86,11 @@ const CollectionsMapScreen = (props) => {
             else
                 mymap.removeLayer(stacjonarne);
 
+            if (filter.includes('Kwarantanna'))
+                kwarantanna.addTo(mymap);
+            else
+                mymap.removeLayer(kwarantanna);
+
             if (filter.includes('Szpitale'))
                 szpitale.addTo(mymap);
             else
@@ -65,6 +98,7 @@ const CollectionsMapScreen = (props) => {
         } else {
             domowe.addTo(mymap);
             stacjonarne.addTo(mymap);
+            kwarantanna.addTo(mymap);
             szpitale.addTo(mymap);
         }
     }, [filter]);
