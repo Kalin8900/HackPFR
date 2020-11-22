@@ -2,8 +2,10 @@ import firebase from "firebase/app";
 import 'firebase/database'
 import 'firebase/auth'
 
+console.log(process.env.REACT_APP_API_KEY)
+
 const firebaseConfig = {
-    apiKey: "AIzaSyC8JBFxgCC3r77R0OHLPY75MwQDyq7Owm8",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "hackpfr.firebaseapp.com",
     databaseURL: "https://hackpfr.firebaseio.com",
     projectId: "hackpfr",

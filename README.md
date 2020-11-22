@@ -20,3 +20,6 @@ Jakie bazy danych?
 -> e-property (System Ewidencji Gruntów i Budynków),
 -> dane Wydziału Zarządzania Kryzysowego UM pozyskane z Powiatowej Stacji Sanitarno-Epidemiologicznej, dotyczące odpadów medycznych
 -> inne bazy danych funkcjonujące w Urzędzie (w zależności od potrzeb i sugestii)
+
+----
+https://hackpfr.web.app/
