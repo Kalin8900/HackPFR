@@ -45,7 +45,7 @@ function Header(props) {
                         <NavElement path="/covid">Mapa COVID</NavElement>
                     </Nav>
                     <Form inline>
-                        <NavElement path="/"><FontAwesomeIcon style={{margin: 5}} icon={faSignOutAlt} />Wyloguj</NavElement>
+                        <NavElement path="/logout"><FontAwesomeIcon style={{margin: 5}} icon={faSignOutAlt} />Wyloguj</NavElement>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
