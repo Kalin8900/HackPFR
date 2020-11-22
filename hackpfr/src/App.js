@@ -20,6 +20,7 @@ import mainTheme from "./assets/graphics/theme";
 import NotFound from "./screens/404";
 import StatsScreen from "./screens/StatsScreen";
 import PermissionDenied from "./components/PermissionDenied";
+import LogOut from "./screens/LogOut";
 
 const mt = mainTheme;
 
@@ -71,6 +72,9 @@ function App() {
                         </Route>
                         <Route path='/declarations'>
                             <DeclarationsScreen user={user}/>
+                        </Route>
+                        <Route path='/logout'>
+                            <LogOut user={user}/>
                         </Route>
                         <Route path='*' exact component={NotFound}/>
                     </Switch>
