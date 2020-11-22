@@ -45,7 +45,7 @@ function Header(props) {
                         <NavElement path="/covid">Mapa COVID</NavElement>
                     </Nav>
                     <Form inline>
-                        <NavElement path="/"><FontAwesomeIcon icon={faSignOutAlt} /></NavElement>
+                        <NavElement path="/"><FontAwesomeIcon style={{margin: 5}} icon={faSignOutAlt} />Wyloguj</NavElement>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
@@ -64,7 +64,7 @@ function Header(props) {
                         <NavElement path="/stats">Statystyki</NavElement>
                     </Nav>
                     <Form inline>
-                        <NavElement path="/log"><FontAwesomeIcon icon={faSignInAlt} /></NavElement>
+                        <NavElement path="/log"><FontAwesomeIcon style={{margin: 5}} icon={faSignInAlt} /> Zaloguj</NavElement>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
