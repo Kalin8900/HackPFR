@@ -24,7 +24,7 @@ function HomeScreen() {
                     </Col>
                     <Col>
                         <BigButton className='smallHomeBtn' style={upperBtn} path='/reportCollection'>Zgłoś zbiórkę</BigButton>
-                        <BigButton className='smallHomeBtn' style={btnStyle} path='/updateCollection'>Zaktualizuj zbiórkę</BigButton>
+                        <BigButton className='smallHomeBtn' style={btnStyle} path='/update'>Zaktualizuj zbiórkę</BigButton>
                     </Col>
                     <Col>
                         <BigButton className='homeBtn' style={btnStyle} path='/reportIsolation'>Zgłoś izolację</BigButton>
