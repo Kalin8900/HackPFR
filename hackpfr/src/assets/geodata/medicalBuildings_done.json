@@ -1,0 +1,33 @@
+{
+"type": "FeatureCollection",
+"name": "medicalBuildings",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "x_skrKarto": "szpit.", "x_informDo": "Wojewódzki Szpital Specjalistyczny#Odzial dzieciecy, ZOL, Zaklad Pielegnacyjno-opiekunczy" }, "geometry": { "type": "Point", "coordinates": [ 23.453179270884959, 51.149647876287233 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "szpit.", "x_informDo": "Samodzielny Publiczny Wojewódzki Szpital Specjalistyczny" }, "geometry": { "type": "Point", "coordinates": [ 23.455388484420613, 51.150534780219481 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Lekodent" }, "geometry": { "type": "Point", "coordinates": [ 23.49957898258225, 51.135665142219231 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "NFZ Przychodnia nr.1" }, "geometry": { "type": "Point", "coordinates": [ 23.495485700446334, 51.136101185460994 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "szpit.", "x_informDo": "Samodzielny Publiczny Wojewódzki Szpital Specjalistyczny" }, "geometry": { "type": "Point", "coordinates": [ 23.455508340638787, 51.149339971431985 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "szpit.", "x_informDo": "Samodzielny Publiczny Wojewódzki Szpital Specjalistyczny" }, "geometry": { "type": "Point", "coordinates": [ 23.455641550431103, 51.149792749089279 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "szpit.", "x_informDo": "Samodzielny Publiczny Wojewódzki Szpital Specjalistyczny" }, "geometry": { "type": "Point", "coordinates": [ 23.455543108386635, 51.149930090985933 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Niepubliczny Zaklad Opieki Zdrowotnej Pielegniarz" }, "geometry": { "type": "Point", "coordinates": [ 23.466831789320981, 51.137897079675028 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "NZOZ LASER-MED Poradnia Alergologiczna, Labolatorium Analityczne" }, "geometry": { "type": "Point", "coordinates": [ 23.460029819436549, 51.133121546361828 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "szpit.", "x_informDo": "Samodzielny Publiczny Wojewódzki Szpital Specjalistyczny" }, "geometry": { "type": "Point", "coordinates": [ 23.453655447390378, 51.151524496589836 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zlb.", "x_informDo": "Sloneczko" }, "geometry": { "type": "Point", "coordinates": [ 23.477054913601535, 51.121383180647484 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Miejski Samodzielny Publiczny ZOZ w Chelmie Przychodnia nr 2" }, "geometry": { "type": "Point", "coordinates": [ 23.473086371351169, 51.122514715436154 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "NFZ TOPMED" }, "geometry": { "type": "Point", "coordinates": [ 23.483079031273057, 51.134744146160166 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": null, "x_informDo": "Powiatowa Stacja Epidemiologiczna, Powiatowy Inspektor Sanitarny" }, "geometry": { "type": "Point", "coordinates": [ 23.45749608782754, 51.150227176248258 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Centrum Medyczne Luxmed, Apteka, Salon Telefonii Komórkowej Plus" }, "geometry": { "type": "Point", "coordinates": [ 23.47090974536075, 51.131403866965236 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Prosektorium" }, "geometry": { "type": "Point", "coordinates": [ 23.45485790650466, 51.151963708466468 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Centrum Dentystyczne MED-DENT" }, "geometry": { "type": "Point", "coordinates": [ 23.500443712099422, 51.133528782673331 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Lekarz. NZOZ" }, "geometry": { "type": "Point", "coordinates": [ 23.494612532199046, 51.140838337260476 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Przychodnia Dentado" }, "geometry": { "type": "Point", "coordinates": [ 23.457356210692776, 51.144881030350945 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Pielegniarska Opieka Domowa Piel-Med.Plus" }, "geometry": { "type": "Point", "coordinates": [ 23.46030868741267, 51.153437347978112 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "d. op.", "x_informDo": "Miejski Osrodek Pomocy Rodzinie" }, "geometry": { "type": "Point", "coordinates": [ 23.479541985131966, 51.13697024131136 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Novena Clinica" }, "geometry": { "type": "Point", "coordinates": [ 23.455982756867076, 51.146574718205763 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Niepubliczny Zaklad Opieki Zdrowotnej San-Med., Apteka Mea" }, "geometry": { "type": "Point", "coordinates": [ 23.482356226093867, 51.124014572595541 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Poradnia Stomatologiczna" }, "geometry": { "type": "Point", "coordinates": [ 23.467751335928536, 51.13191223513946 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Warsztaty Terapi Zajeciowej Osób Niepelnosprawnych" }, "geometry": { "type": "Point", "coordinates": [ 23.452087577659224, 51.139463657490978 ] } },
+{ "type": "Feature", "properties": { "x_skrKarto": "zdr.", "x_informDo": "Niepubliczny Zaklad Opieki Zdrowotnej Prof-Med" }, "geometry": { "type": "Point", "coordinates": [ 23.448099127786328, 51.136829537328417 ] } }
+]
+}
