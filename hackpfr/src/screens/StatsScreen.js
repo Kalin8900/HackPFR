@@ -49,20 +49,20 @@ const StatsScreen = props => {
             <Row style={{...RowStyle, marginTop: '4vh'}}><h2>Najlepsi w tym miesiącu</h2></Row>
             <Row style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'center', width: '50vw',gap: 0}}>
                 <Col>
-                    <h3>szkoła 1.</h3>
+                    <h3>Szkoła Podstawowa Nr 2</h3>
                     <div style={{background: 'red', height:175}}></div>
                 </Col>
                 <Col>
-                    <h3>szkoła 2.</h3>
+                    <h3>II Liceum Ogólnokształcące</h3>
                     <div style={{background: 'red', height:250}}></div>
                 </Col>
                 <Col>
-                    <h3> szkoła 3.</h3>
+                    <h3>Zespół Szkół Budowlanych i Geodezyjnych</h3>
                     <div style={{background: 'red', height:100}}></div>
                 </Col>
             </Row>
             <Row style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'center', width: '50vw',gap: 0, marginTop: '6vh'}}>
-            <Plot data={[traces.trace1, traces.trace2, traces.trace3]} layout={{title: 'Ilość zebranych surowców w danym miesiącu'}} />
+            <Plot data={[traces.trace1, traces.trace2, traces.trace3]} layout={{title: 'Ilość zebranych surowców'}} />
             </Row>
         
         </Container>
