@@ -7,6 +7,7 @@ import filtrMakulatura from '../assets/graphics/filtr_makulatura.svg';
 import filtrMetale from '../assets/graphics/filtr_metale.svg';
 import filtrNakretki from '../assets/graphics/filtr_nakretki.svg';
 import filtrPlastik from '../assets/graphics/filtr_plastik.svg';
+import filtrGabaryty from '../assets/graphics/filtr_gabaryty.svg';
 import filtrMgo from '../assets/graphics/filtr_mgo.svg';
 import filtrPszok from '../assets/graphics/filtr_pszok.svg';
 import filtrDom from '../assets/graphics/filtr_dom.svg';
@@ -42,6 +43,7 @@ const MapFiltering = (props) => {
                     <FilteredElement name="Elektronika" icon={filtrElektronika} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="Butelki" icon={filtrPlastik} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="Nakrętki" icon={filtrNakretki} filter={props.filter} setFilter={props.setFilter} />
+                    <FilteredElement name="Gabaryty" icon={filtrGabaryty} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="PSZOK" icon={filtrPszok} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="MGO" icon={filtrMgo} filter={props.filter} setFilter={props.setFilter} />
                 </ListGroup>

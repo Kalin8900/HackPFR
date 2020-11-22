@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import L from "leaflet";
 import collections from "../assets/geodata/collections_done.json";
 import drugs from "../assets/geodata/drugsNbatteries_done.json";
+import bulky from "../assets/geodata/bulky_waste.json";
 import pszoks from "../assets/geodata/pszok_data.json";
 import mgos from "../assets/geodata/mgo_data.json";
 import CollectionSummary from "../components/CollectionSummary";
@@ -13,6 +14,7 @@ import pinMakulatura from "../assets/graphics/pin-makulatura.svg";
 import pinNakretki from "../assets/graphics/pin-nakretki.svg";
 import pinPlastik from "../assets/graphics/pin-plastik.svg";
 import pinMetale from "../assets/graphics/pin-metale.svg";
+import pinGabaryty from "../assets/graphics/pin-gabaryty.svg";
 import pinPszok from "../assets/graphics/pin-pszok.svg";
 import pinMgo from "../assets/graphics/pin-mgo.svg";
 
@@ -33,7 +35,17 @@ function generateLayer(fraction, icon) {
                 return L.marker(latlng, {
                     icon: markerImage
                 }).on('mouseover', function () {
-                    this.bindPopup(feature.properties.name).openPopup();
+                    this.bindPopup("<b>" + feature.properties.name + "</b><br/>" + feature.properties.old_address).openPopup();
+                });
+            }
+        });
+    else if (fraction === 'Gabaryty')
+        return L.geoJson(bulky, {
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: markerImage
+                }).on('mouseover', function () {
+                    this.bindPopup("<b>" + feature.properties.place + "</b><br/>Daty przyjmowania: " + feature.properties.data.replaceAll(';', ', ')).openPopup();
                 });
             }
         });
@@ -43,7 +55,7 @@ function generateLayer(fraction, icon) {
                 return L.marker(latlng, {
                     icon: markerImage
                 }).on('mouseover', function () {
-                    this.bindPopup("PSZOK " + feature.properties.Adres1).openPopup();
+                    this.bindPopup("<b>PSZOK</b><br/>" + feature.properties.Adres1).openPopup();
                 });
             }
         });
@@ -53,7 +65,7 @@ function generateLayer(fraction, icon) {
                 return L.marker(latlng, {
                     icon: markerImage
                 }).on('mouseover', function () {
-                    this.bindPopup("MGO " + feature.properties.Ulica).openPopup();
+                    this.bindPopup("<b>MGO (" + feature.properties.owner + ")</b><br/>" + feature.properties.adres).openPopup();
                 });
             }
         });
@@ -79,7 +91,7 @@ function generateLayer(fraction, icon) {
                 return L.marker(latlng, {
                     icon: markerImage
                 }).on('mouseover', function () {
-                    this.bindPopup(feature.properties.name).openPopup();
+                    this.bindPopup("<b>" + feature.properties.name + "</b><br/>" + feature.properties.old_address).openPopup();
                 });
             }
         });
@@ -93,6 +105,7 @@ let elektronika = generateLayer("Elektronika", pinElektronika);
 let leki = generateLayer("Leki", pinLeki);
 let nakretki = generateLayer("Nakrętki", pinNakretki);
 let butelki = generateLayer("Butelki", pinPlastik);
+let gabaryty = generateLayer("Gabaryty", pinGabaryty);
 let pszok = generateLayer("PSZOK", pinPszok);
 let mgo = generateLayer("MGO", pinMgo);
 
@@ -145,6 +158,11 @@ const CollectionsMapScreen = () => {
             else
                 mymap.removeLayer(butelki);
 
+            if (filter.includes('Gabaryty'))
+                gabaryty.addTo(mymap);
+            else
+                mymap.removeLayer(gabaryty);
+
             if (filter.includes('PSZOK'))
                 pszok.addTo(mymap);
             else
@@ -162,6 +180,7 @@ const CollectionsMapScreen = () => {
             leki.addTo(mymap);
             nakretki.addTo(mymap);
             butelki.addTo(mymap);
+            gabaryty.addTo(mymap);
             pszok.addTo(mymap);
             mgo.addTo(mymap);
         }
