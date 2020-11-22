@@ -70,6 +70,8 @@ function generateLayer(fraction, icon) {
                         return feature.properties.plastic > 0;
                     case 'Nakrętki':
                         return feature.properties.cups > 0;
+                    default:
+                        return false;
                 }
             },
             pointToLayer: function (feature, latlng) {
