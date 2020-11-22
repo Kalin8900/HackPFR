@@ -23,3 +23,7 @@ Jakie bazy danych?
 
 ----
 https://hackpfr.web.app/
+
+2 userów:
+urzad@urzad.com urzad123
+sanepid@sanepid.com sanepid123
