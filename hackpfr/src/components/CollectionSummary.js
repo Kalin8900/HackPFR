@@ -1,40 +1,45 @@
-import React, { useState, useEffect, useComponent } from "react";
-import { Navbar, Nav, NavDropdown, ListGroup } from 'react-bootstrap';
-import { Container, Row, Col} from 'react-bootstrap';
-
-const RankingItem = props => {
-    console.log(props.index)
-
-    if(props.index % 2 !== 0)
-        return (<ListGroup.Item style={{display: 'flex', justifyContent: 'space-around'}}>
-            <span>{props.children}</span><span>{props.value + ' kg'} </span>
-        </ListGroup.Item>)
-    else
-        return (<ListGroup.Item variant='secondary' style={{display: 'flex', justifyContent: 'space-around'}}>
-            <span>{props.children}</span><span>{props.value + ' kg'}</span>
-        </ListGroup.Item>)
-}
+import React from "react";
+import { Table } from 'react-bootstrap';
 
 const CollectionSummary = () => {
 
-        
     return (
         <div id="collectionSummary" style={collectionSummaryStyle}>
-            <h5 style={{margin: '2vh'}}>RANKING ZBIÓREK</h5>
-            <h6>Zebrano 5432kg</h6>
-            <ListGroup>
-                <RankingItem index={1} value={154}>II Liceum OGL</RankingItem>
-                <RankingItem index={2} value={120}>Przedszkole nr 10</RankingItem>
-                <RankingItem index={3} value={98}>CKU</RankingItem>
-            </ListGroup>
+            <div style={{}}>
+                <h5 style={{ margin: '2vh' }}>RANKING ZBIÓREK</h5>
+                <h6>Zebrano 5432kg</h6>
+            </div>
+            <Table borderless hover striped style={{'background': "rgba(253, 253, 254, 1)"}}>
+                <tbody>
+                    <tr>
+                        <td>II Liceum Ogólnokształcące</td>
+                        <td style={nowrap}>154 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Szkoła Podstawowa Nr 2</td>
+                        <td style={nowrap}>120 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Zespół Szkół Budowlanych i Geodezyjnych</td>
+                        <td style={nowrap}>98 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Zespół Szkół Ekonomicznych i  Mundurowych</td>
+                        <td style={nowrap}>77 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Zespół Szkolno Przedszkolny Nr 3 z Oddziałami Integracyjnymi</td>
+                        <td style={nowrap}>49 kg</td>
+                    </tr>
+                </tbody>
+            </Table>
         </div>
     );
 }
 
-export default CollectionSummary; 
+export default CollectionSummary;
 
 const collectionSummaryStyle = {
-    'height': "50vh",
     'width': '17vw',
     'borderRadius': "10px",
     'position': "absolute",
@@ -44,4 +49,7 @@ const collectionSummaryStyle = {
     'filter': "drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.161))",
     'zIndex': 1000
 }
-  
+
+const nowrap = {
+    'white-space': 'nowrap'
+}
