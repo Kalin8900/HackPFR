@@ -5,10 +5,10 @@ import markerIconBlue from "../assets/graphics/pin-doc-niebieski.svg";
 import markerIconBlack from "../assets/graphics/pin-doc-czarny.svg";
 //import { MarkerCluster } from '../components/clusters/src/MarkerCluster.js';
 //import { MarkerClusterGroup } from '../components/clusters/src/MarkerClusterGroup.js';
-import * as clusters from '../components/cluster/leaflet.markercluster/dist/leaflet.markercluster.js';
+import L from "leaflet";
+import '../components/cluster/leaflet.markercluster/dist/leaflet.markercluster-src.js';
 import '../components/cluster/leaflet.markercluster/dist/MarkerCluster.css';
 import '../components/cluster/leaflet.markercluster/dist/MarkerCluster.Default.css';
-import L from "leaflet";
 import PermissionDenied from "../components/PermissionDenied";
 
 let mymap;
