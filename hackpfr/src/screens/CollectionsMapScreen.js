@@ -52,7 +52,7 @@ function generateLayer(fraction, icon) {
                 return L.marker(latlng, {
                     icon: markerImage
                 }).on('mouseover', function () {
-                    this.bindPopup(feature.properties.Ulica).openPopup();
+                    this.bindPopup("MGO " + feature.properties.Ulica).openPopup();
                 });
             }
         });
