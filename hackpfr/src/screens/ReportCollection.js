@@ -42,7 +42,7 @@ function ReportCollection() {
     const [modalShow, setModalShow] = useState(false);
     const [modalAddress, setModalAddress] = useState("brak");
 
-    const fractions = [{ value: 0, label: 'Nakrętki plastikowe' }, { value: 1, label: 'Makulatura' }, { value: 2, label: 'Elektronika' }, { value: 3, label: 'Metal' }];
+    const fractions = [{ value: 0, label: 'Makulatura' }, { value: 1, label: 'Baterie' }, { value: 2, label: 'Metal' }, { value: 3, label: 'Elektronika' }, { value: 4, label: 'Nakrętki' }, { value: 5, label: 'Butelki' }];
     const addresses = locations.map((location) => { return { value: location.id, label: location.address } });
 
     useEffect(() => {

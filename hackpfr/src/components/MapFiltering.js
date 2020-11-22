@@ -23,16 +23,16 @@ function removeElement(array, element) {
 
 const FilteredElement = (props) => {
     if (props.filter.includes(props.name))
-        return (<ListGroup.Item className="active" action variant="light" onClick={() => props.setFilter(removeElement(props.filter, props.name))}><img src={props.icon} style={{width: '1vw'}} /> {props.name}</ListGroup.Item>);
+        return (<ListGroup.Item className="active" action variant="light" onClick={() => props.setFilter(removeElement(props.filter, props.name))}><div><img alt="" src={props.icon} style={{ width: '3vh' }} /><span style={{verticalAlign: 'middle', margin: 10}}>{props.name}</span></div></ListGroup.Item>);
     else
-        return (<ListGroup.Item action variant="light" onClick={() => props.setFilter([...props.filter, props.name])}><img src={props.icon} style={{width: '1vw'}} /> {props.name}</ListGroup.Item>);
+        return (<ListGroup.Item action variant="light" onClick={() => props.setFilter([...props.filter, props.name])}><div><img alt="" src={props.icon} style={{ width: '3vh'}} /><span style={{verticalAlign: 'middle', margin: 10}}>{props.name}</span></div></ListGroup.Item>);
 }
 
 const MapFiltering = (props) => {
     if (props.screen === 'CollectionsMapScreen')
         return (
             <div style={mapFilteringStyle}>
-                <h5 style={{ margin: '2vh'}}>FILTROWANIE</h5>
+                <h5 style={{ margin: '2vh' }}>FILTROWANIE</h5>
                 <ListGroup>
                     <FilteredElement name="Leki" icon={filtrLeki} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="Baterie" icon={filtrBaterie} filter={props.filter} setFilter={props.setFilter} />
@@ -49,7 +49,7 @@ const MapFiltering = (props) => {
     else if (props.screen === 'CovidScreen')
         return (
             <div style={mapFilteringStyle}>
-                <h6 style={{ margin: '2vh'}}>FILTROWANIE</h6>
+                <h6 style={{ margin: '2vh' }}>FILTROWANIE</h6>
                 <ListGroup>
                     <FilteredElement name="Izolatoria domowe" icon={filtrDom} filter={props.filter} setFilter={props.setFilter} />
                     <FilteredElement name="Izolatoria stacjonarne" icon={filtrPubliczne} filter={props.filter} setFilter={props.setFilter} />

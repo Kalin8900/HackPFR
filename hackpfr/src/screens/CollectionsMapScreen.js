@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import L from "leaflet";
-import collections from "../assets/geodata/collections.json"
-import CollectionSummary from "../components/CollectionSummary"
-import MapFiltering from "../components/MapFiltering"
+import collections from "../assets/geodata/collections_done.json";
+import drugs from "../assets/geodata/drugsNbatteries_done.json";
+import CollectionSummary from "../components/CollectionSummary";
+import MapFiltering from "../components/MapFiltering";
 import pinBaterie from "../assets/graphics/pin-baterie.svg";
 import pinElektronika from "../assets/graphics/pin-elektronika.svg";
 import pinLeki from "../assets/graphics/pin-leki.svg";
@@ -20,18 +21,43 @@ function generateLayer(fraction, icon) {
         popupAnchor: [-3, -17]
     });
 
-    return L.geoJson(collections, {
-        filter: function (feature, layer) {
-            return feature.properties.fraction === fraction;
-        },
-        pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, {
-                icon: markerImage
-            }).on('mouseover', function () {
-                this.bindPopup(feature.properties.name).openPopup();
-            });
-        }
-    });
+    if (fraction === 'Leki' || fraction === 'Baterie')
+        return L.geoJson(drugs, {
+            filter: function (feature, layer) {
+                return feature.properties.type === fraction;
+            },
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: markerImage
+                }).on('mouseover', function () {
+                    this.bindPopup(feature.properties.name).openPopup();
+                });
+            }
+        });
+    else
+        return L.geoJson(collections, {
+            filter: function (feature, layer) {
+                switch (fraction) {
+                    case 'Makulatura':
+                        return feature.properties.paper > 0;
+                    case 'Metal':
+                        return feature.properties.metal > 0;
+                    case 'Elektronika':
+                        return feature.properties.chargers > 0;
+                    case 'Butelki':
+                        return feature.properties.plastic > 0;
+                    case 'Nakrętki':
+                        return feature.properties.cups > 0;
+                }
+            },
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: markerImage
+                }).on('mouseover', function () {
+                    this.bindPopup(feature.properties.name).openPopup();
+                });
+            }
+        });
 }
 
 let mymap;
@@ -117,7 +143,7 @@ const CollectionsMapScreen = () => {
     }, [filter]);
 
     return (
-        <div id="mapid" style={{height: '88vh'}}>
+        <div id="mapid" style={{ height: '88vh' }}>
             <CollectionSummary />
             <MapFiltering filter={filter} setFilter={setFilter} screen="CollectionsMapScreen" />
         </div>
