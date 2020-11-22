@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import L from "leaflet";
 import collections from "../assets/geodata/collections_done.json";
 import drugs from "../assets/geodata/drugsNbatteries_done.json";
+import pszoks from "../assets/geodata/pszok_data.json";
+import mgos from "../assets/geodata/mgo_data.json";
 import CollectionSummary from "../components/CollectionSummary";
 import MapFiltering from "../components/MapFiltering";
 import pinBaterie from "../assets/graphics/pin-baterie.svg";
@@ -31,6 +33,26 @@ function generateLayer(fraction, icon) {
                     icon: markerImage
                 }).on('mouseover', function () {
                     this.bindPopup(feature.properties.name).openPopup();
+                });
+            }
+        });
+    else if (fraction === 'PSZOK')
+        return L.geoJson(pszoks, {
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: markerImage
+                }).on('mouseover', function () {
+                    this.bindPopup("PSZOK " + feature.properties.Adres1).openPopup();
+                });
+            }
+        });
+    else if (fraction === 'MGO')
+        return L.geoJson(mgos, {
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: markerImage
+                }).on('mouseover', function () {
+                    this.bindPopup(feature.properties.Ulica).openPopup();
                 });
             }
         });
