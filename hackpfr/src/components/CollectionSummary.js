@@ -23,9 +23,9 @@ const CollectionSummary = () => {
             <h5 style={{margin: '2vh'}}>RANKING ZBIÓREK</h5>
             <h6>Zebrano 5432kg</h6>
             <ListGroup>
-                <RankingItem index={1} value={154}>Szkoła 1</RankingItem>
-                <RankingItem index={2} value={120}>Szkoła 2</RankingItem>
-                <RankingItem index={3} value={98}>Szkoła 3</RankingItem>
+                <RankingItem index={1} value={154}>II Liceum OGL</RankingItem>
+                <RankingItem index={2} value={120}>Przedszkole nr 10</RankingItem>
+                <RankingItem index={3} value={98}>CKU</RankingItem>
             </ListGroup>
         </div>
     );

@@ -4,32 +4,28 @@ import {Container, Row, Col, Button, Alert, Form} from 'react-bootstrap';
 import {Redirect, useRouteMatch} from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import mainTheme from "../assets/graphics/theme";
+import {auth} from "../firebase";
+
 const mt = mainTheme;
 
 const LoginForm = props => {
-    const [logged, setLogged] = useState(false);
+    const [user, setUser] = useState(false);
     const loginInput = useRef(null);
     const passInput = useRef(null);
-    const {path, url} = useRouteMatch();
 
 
     //MAKIETA
     const click = () => {
-        if(loginInput.current.value === 'urzad' && passInput.current.value === 'urzad123')
-        {
-            setLogged(true);
-            document.cookie = '';
-            document.cookie = 'user=urząd cnt=1 ';
-        }
-        else if(loginInput.current.value === 'san' && passInput.current.value === 'san123')
-        {
-            setLogged(true);
-            document.cookie = 'user=sanepid cnt=1 ';
-        }
-        else
-            toast.error('Nie udało się zalogować na podany login i hasło');
+        const email = loginInput.current.value;
+        const pass = passInput.current.value;
 
-        console.log(document.cookie)
+        auth.signInWithEmailAndPassword(email, pass)
+            .then((e) => {
+                setUser(e.user);
+            })
+            .catch((err) => {
+                toast.error('Nie udało się zalogować na podany login i hasło');
+            })
     }
 
     return (
@@ -39,15 +35,15 @@ const LoginForm = props => {
             </h1>
             <Form>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Login</Form.Label>
-                    <Form.Control ref={loginInput} type="login" placeholder="Login"/>
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control ref={loginInput} type="email" placeholder="Login"/>
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Hasło</Form.Label>
                     <Form.Control ref={passInput} type="password" placeholder="Hasło"/>
                 </Form.Group>
-                {logged ? <Redirect to={'/cityPanel'} /> :
+                {auth.currentUser ? <Redirect to={'/cityPanel'} /> :
                 <Button variant="primary" onClick={click} size='lg'>
                     Zaloguj
                 </Button>}
@@ -59,9 +55,9 @@ const LoginForm = props => {
 const LoginScreen = props => {
 
     return (
-        <Container className='page' style={{background: mt.colors.pageBackground, justifyContent: 'center'}}>
+        <Container className='page' style={{background: mt.colors.pageBackground, justifyContent: 'center', height: '91vh'}}>
             <ToastContainer />
-            <LoginForm  style={{marginBottom: '15vh'}}/>
+            <LoginForm style={{marginBottom: '15vh'}}/>
 
         </Container>
 )

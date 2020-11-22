@@ -33,10 +33,11 @@ let domowe = generateLayer("Izolatoria domowe");
 let stacjonarne = generateLayer("Izolatoria stacjonarne");
 let szpitale = generateLayer("Szpitale");
 
-const CollectionsMapScreen = () => {
+const CollectionsMapScreen = (props) => {
     const [filter, setFilter] = useState([]);
 
     useEffect(() => {
+
         //map init
         mymap = L.map('mapid').setView([51.132541, 23.479241], 14, { zoomControl: true });
 

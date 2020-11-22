@@ -13,7 +13,8 @@ function NavElement(props) {
         return <Nav.Link className='navItem  navigation' href={props.path} {...props}>{props.children}</Nav.Link>
 }
 
-function Header() {
+function Header(props) {
+    const user = props.user;
     const cookie = document.cookie.split(' ');
     console.log(window.location.pathname)
 
@@ -26,7 +27,7 @@ function Header() {
                 </Navbar.Brand>
             </Navbar>
         );
-    else if (window.location.pathname === '/cityPanel' || window.location.pathname === '/covid' || window.location.pathname === '/covidUpload' || window.location.pathname === '/declarations')
+    else if (user && (window.location.pathname === '/cityPanel' || window.location.pathname === '/covid' || window.location.pathname === '/covidUpload' || window.location.pathname === '/declarations'))
         return (
             <Navbar fixed="top" collapseOnSelect expand="lg" sticky="top" className='navigation'>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -36,7 +37,7 @@ function Header() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         {
-                            cookie[0].substr(5) === 'urząd' ?
+                            user.displayName === 'urząd' ?
                                 <NavElement path="/declarations">Mapa deklaracji</NavElement>
                                 :
                                 <NavElement path="/declarations" disabled>Mapa deklaracji</NavElement>

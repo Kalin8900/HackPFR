@@ -8,11 +8,13 @@ import createPlotlyComponent from 'react-plotly.js/factory';
 const Plot = createPlotlyComponent(Plotly);
 const mt = mainTheme;
 
+const RowStyle = {display: 'flex', alignItems: 'flex-end', justifyContent: 'center', width: '50vw',gap: 0}
 const StatsScreen = props => {
 
 
     return (
         <Container className='page' style={{backgroundColor: mt.colors.pageBackground, justifyContent: 'center', flexFlow: 'column'}}>
+            <Row style={RowStyle}>Najlepsi w tym miesiącu</Row>
             <Row style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'center', width: '50vw',gap: 0}}>
                 <Col>
                     <h3>szkoła 1.</h3>
@@ -26,7 +28,22 @@ const StatsScreen = props => {
                     <h3> szkoła 3.</h3>
                     <div style={{background: 'red', height:100}}></div>
                 </Col>
-            </Row>
+            </Row><Row style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'center', width: '50vw',gap: 0}}>
+            {/*<Plot*/}
+        </Row><Row style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'center', width: '50vw',gap: 0}}>
+            <Col>
+                <h3>szkoła 1.</h3>
+                <div style={{background: 'red', height:175}}></div>
+            </Col>
+            <Col>
+                <h3>szkoła 2.</h3>
+                <div style={{background: 'red', height:250}}></div>
+            </Col>
+            <Col>
+                <h3> szkoła 3.</h3>
+                <div style={{background: 'red', height:100}}></div>
+            </Col>
+        </Row>
         </Container>
     )
 }

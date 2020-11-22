@@ -4,11 +4,16 @@ import markerIcon from "../assets/graphics/marker.png"
 //import { MarkerCluster } from '../components/clusters/src/MarkerCluster.js';
 //import { MarkerClusterGroup } from '../components/clusters/src/MarkerClusterGroup.js';
 import L from "leaflet";
+import PermissionDenied from "../components/PermissionDenied";
 
 let mymap;
 
-const CollectionsMapScreen = () => {
+const CollectionsMapScreen = (props) => {
+    const user = props.user;
+
     useEffect(() => {
+        if(user.displayName !== 'urząd')
+            return;
         //map init
         mymap = L.map('mapid').setView([51.132541, 23.479241], 14, { zoomControl: true });
 
@@ -34,6 +39,9 @@ const CollectionsMapScreen = () => {
 		mymap.addLayer(markers);
 */
     }, []);
+
+    if(user.displayName !== 'urząd')
+        return <PermissionDenied />
 
     return (
         <div id="mapid"></div>

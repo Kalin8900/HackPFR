@@ -6,9 +6,10 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import mainTheme from "../assets/graphics/theme";
 import { FilePicker } from 'react-file-picker';
+
 const mt = mainTheme;
 
-function ReportIsolation() {
+function ReportIsolation(props) {
     const [mode, setMode] = useState(1);
 
     return (
